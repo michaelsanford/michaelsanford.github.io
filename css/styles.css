@@ -94,6 +94,11 @@ main .intro {
 	font-weight: 600;
 }
 
+main .intro .name {
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+}
+
 main .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
@@ -109,10 +114,18 @@ main .tagline .spacer {
 }
 
 .icons-social a {
+	display: inline-flex;
+	flex-direction: column;
+	color: transparent;
+	text-decoration: none;
+}
+
+.icons-social a i {
 	color: var(--text);
 }
 
-.icons-social a:hover {
+.icons-social a:hover,
+.icons-social a:hover i {
 	transition: color 1s ease;
 	color: var(--accent);
 }
