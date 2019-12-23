@@ -3,12 +3,12 @@ const available = [...document.querySelectorAll("section")].map(e => e.getAttrib
 const nodes = [...document.querySelectorAll("section")];
 
 // if (want.length > 1) {
-    let cursor = 0;
-    setInterval(() => {
-        nodes[cursor].classList.remove("show");
-        cursor = ++cursor % nodes.length;
-        nodes[cursor].classList.add("show");
-    }, 20000);
+let cursor = 0;
+setInterval(() => {
+    nodes[cursor].classList.remove("show");
+    cursor = ++cursor % nodes.length;
+    nodes[cursor].classList.add("show");
+}, 10000);
 // } else {
 //     // const preferred = available.filter(o => want.includes(o));
 //     [...document.querySelectorAll("section")]
