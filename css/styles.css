@@ -128,7 +128,9 @@ main .tagline .spacer {
 }
 
 .icons-social a:hover,
-.icons-social a:hover i {
+.icons-social a:hover i,
+.icons-social a:focus,
+.icons-social a:focus i {
 	transition: color 1s ease;
 	color: var(--accent);
 }
