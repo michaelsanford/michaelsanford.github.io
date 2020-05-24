@@ -30,6 +30,10 @@ ul {
 	font-weight: normal;
 }
 
+aside figure img {
+	border-radius: 50%;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
