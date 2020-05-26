@@ -32,6 +32,7 @@ ul {
 
 aside figure img {
 	border-radius: 50%;
+	opacity: 0.6;
 }
 
 img {
