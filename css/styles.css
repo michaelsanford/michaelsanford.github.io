@@ -126,6 +126,7 @@ main .tagline .spacer {
 	flex-direction: column;
 	color: transparent;
 	text-decoration: none;
+	max-width: 100px;
 }
 
 .icons-social a i {
