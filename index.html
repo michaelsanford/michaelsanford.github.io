@@ -58,7 +58,6 @@
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
-
 		gtag('config', 'UA-13056296-6');
 	</script>
 
@@ -118,20 +117,32 @@
 				કૃત્રિમ બુદ્ધિનો વિદ્યાર્થી
 			</div>
 		</section>
+		<section lang="hi">
+			<div class="intro">हैलो, मैं <span class="name"></span>माइकल</span> हूँ!</div>
+			<div class="tagline">
+				साइबर सुरक्षा विश्लेषक <span class="spacer">|</span>
+				पॉलीग्लॉट डेवलपर <span class="spacer">|</span>
+				मशीन लर्निंग उत्साही
+			</div>
+		</section>
 
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">
-			<a target="_blank" rel="noopener" href="https://github.com/michaelsanford">
-				<i class="fab fa-github"></i>
-				Github
-			</a>
 			<a target="_blank" rel="noopener" href="https://www.linkedin.com/in/michaelsanford0">
 				<i class="fab fa-linkedin"></i>
 				LinkedIn
 			</a>
+			<a target="_blank" rel="noopener" href="https://github.com/michaelsanford">
+				<i class="fab fa-github"></i>
+				Github
+			</a>
 			<a target="_blank" rel="noopener" href="https://stackoverflow.com/story/msanford">
 				<i class="fab fa-stack-overflow"></i>
 				StackOverflow
+			</a>
+			<a target="_blank" rel="noopener" href="https://www.kaggle.com/michaelsanford">
+				<i class="fab fa-kaggle"></i>
+				Kaggle
 			</a>
 			<a target="_blank" rel="noopener" href="https://dev.to/msanford">
 				<i class="fab fa-dev"></i>
@@ -145,28 +156,38 @@
 				<i class="fab fa-twitter"></i>
 				Twitter
 			</a>
-			<a target="_blank" rel="noopener" href="https://codepen.io/msanford">
+			<!-- <a target="_blank" rel="noopener" href="https://codepen.io/msanford">
 				<i class="fab fa-codepen"></i>
 				CodePen
-			</a>
+			</a> -->
 			<a target="_blank" rel="noopener" href="https://orcid.org/0000-0002-1209-0301">
 				<i class="fab fa-orcid"></i>
 				ORCID
 			</a>
 			<a target="_blank" rel="noopener" href="https://addons.mozilla.org/en-CA/firefox/user/15446702/">
 				<i class="fab fa-firefox"></i>
-				Firefox Ext.
+				Firefox Extensions
+			</a>
+			<a target="_blank" rel="noopener" href="https://addons.mozilla.org/en-CA/firefox/user/15446702/">
+				<i class="fab fa-chrome"></i>
+				Chrome Extensions
 			</a>
 			<a target="_blank" rel="noopener" href="https://lichess.org/@/msanford">
 				<i class="fas fa-chess"></i>
 				Chess
 			</a>
-			<!-- <a target="_blank" rel="noopener" href="https://addons.mozilla.org/en-CA/firefox/user/15446702/">
-				<i class="fab fa-chrome"></i>
-				Chrome Ext.
-			</a> -->
 		</div>
 	</main>
 </body>
-<script type="module" src="/js/main.js"></script>
+<script>
+	let cursor = 0;
+	const nodes = [...document.querySelectorAll("section")];
+	const available = nodes.map(e => e.getAttribute("lang"));
+
+	setInterval(() => {
+		nodes[cursor].classList.remove("show");
+		cursor = Math.floor(Math.random() * nodes.length);
+		nodes[cursor].classList.add("show");
+	}, 5000);
+</script>
 </html>
