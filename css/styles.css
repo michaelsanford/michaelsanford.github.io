@@ -160,3 +160,11 @@ main .tagline .spacer {
 .icons-social a svg path {
 	fill: var(--text);
 }
+
+.badges {
+	margin-bottom: 1.5rem;
+}
+
+.certs a img {
+	border-radius: 10px;
+}

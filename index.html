@@ -10,7 +10,7 @@
 		script-src 'self' 'sha256-4lgDRjuSiiujCypRnawgEnZMAupMTxK2OHpW+jYWCIg=';
 		style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com; 
 		font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
-		img-src 'self' https://www.google-analytics.com https://www.gravatar.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com" />
+		img-src 'self' https://www.gravatar.com https://images.credly.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com" />
 
 	<meta http-equiv="Feature-Policy" content="
 		autoplay: 'none';
@@ -26,8 +26,6 @@
 
 	<meta name="author" content="Michael Sanford">
 	<link rel="canonical" href="https://michaelsanford.com" id="canonical_url">
-	
-	<a rel="me" href="https://infosec.exchange/@unitvector">Mastodon</a>
 
 	<link rel="manifest" href="/manifest.json">
 
@@ -96,11 +94,20 @@
 			</div>
 		</section>
 
-		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+		<div class="badges certs">
+			<a href="https://www.credly.com/badges/5aaf70cd-7471-4032-bdd0-333e80946668/public_url" target="_blank" rel="noopener">
+				<img class="share-ui__badge-image" src="https://images.credly.com/size/110x110/images/5cb4b153-44d8-410c-97c6-6afba3faa4af/Comptia_CySA_2Bce.png" alt="CompTIA CySA+ ce Certification" width="110" height="110">
+			</a>
+		</div>
+
 		<div class="icons-social">
 			<a target="_blank" rel="noopener" href="https://www.linkedin.com/in/michaelsanford0">
 				<i class="fab fa-linkedin"></i>
 				LinkedIn
+			</a>
+			<a rel="me" target="_blank" rel="noopener" href="https://infosec.exchange/@unitvector">
+				<i class="fab fa-mastodon"></i>
+				@unitvector
 			</a>
 			<a target="_blank" rel="noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile">
 				<i class="fab fa-stack-overflow"></i>
@@ -126,14 +133,17 @@
 				<i class="fab fa-orcid"></i>
 				ORCID
 			</a>
-			<!-- <a target="_blank" rel="noopener" href="https://twitter.com/msanford">
-				<i class="fab fa-twitter"></i>
-				Twitter
-			</a> -->
-			<!-- <a target="_blank" rel="noopener" href="https://codepen.io/msanford">
-				<i class="fab fa-codepen"></i>
-				CodePen
-			</a> -->
+			<a target="_blank" rel="noopener" href="https://threema.id/JWZ985BH" title="5 c 7 1 3 8 b f
+2 f 6 f c 9 a e
+2 9 d 4 0 b 3 2
+a 0 6 7 d 4 3 2
+1 2 1 3 6 7 9 c
+1 c d 9 a b e 6
+c 8 e d 7 c f 3
+4 b 3 2 3 0 0 c">
+				<i class="fas fa-comment-dots"></i>
+				Threema
+			</a>
 			<a target="_blank" rel="noopener" href="https://addons.mozilla.org/en-CA/firefox/user/15446702/">
 				<i class="fab fa-firefox"></i>
 				Firefox Extensions
