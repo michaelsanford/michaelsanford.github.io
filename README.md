@@ -2,8 +2,6 @@
 
 This is my minimal landing page.
 
-# Changes from Dinesh's template
-
 ## L10n Support (sort of...)
 
 Being a polyglot developer _and human_, I added multi-language support.
@@ -23,6 +21,6 @@ becuase code quality speaks, right?
 
 ## License
 
-This is a fork from @flexdinesh's nice project.
+This is a fork from @flexdinesh's nice project; it's a Ship of Thesesus at this point.
 
 MIT © Dinesh Pandiyan
