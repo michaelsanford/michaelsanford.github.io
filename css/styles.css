@@ -137,11 +137,14 @@ main .tagline .spacer {
 	padding: 20px;
 }
 
+a {
+	text-decoration: none;
+}
+
 .icons-social a {
 	display: inline-flex;
 	flex-direction: column;
 	color: transparent;
-	text-decoration: none;
 	max-width: 100px;
 }
 
