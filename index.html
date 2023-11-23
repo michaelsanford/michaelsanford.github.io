@@ -16,7 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta http-equiv="Content-Security-Policy" content="
-		script-src 'self' 'sha256-4lgDRjuSiiujCypRnawgEnZMAupMTxK2OHpW+jYWCIg=' https://www.googletagmanager;
+		script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager;
 		style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com; 
 		font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com http://fonts.googleapis.com;
 		img-src 'self' https://www.gravatar.com https://images.credly.com https://learn.microsoft.com/ https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com" />
@@ -76,7 +76,7 @@
 					alt="A photograph of my face" />
 			</figure>
 		</aside>
-		<section lang="en" class="show">
+		<section lang="en">
 			<div class="intro">Hello, I'm <span class="name">Michael</span>!</div>
 			<div class="title">Director of Operations</div>
 			<div class="tagline">
@@ -194,14 +194,16 @@ c 8 e d 7 c f 3
 	</main>
 </body>
 <script>
-	let cursor = 0;
 	const nodes = [...document.querySelectorAll("section")];
 	const available = nodes.map(e => e.getAttribute("lang"));
 
-	setInterval(() => {
-		nodes[cursor].classList.remove("show");
-		cursor = Math.floor(Math.random() * nodes.length);
-		nodes[cursor].classList.add("show");
-	}, 5000);
+	user_language = navigator.language.split("-")[0];
+
+	if (!available.includes(user_language)) {
+		user_language = "en";
+	}
+	
+	document.getElementsByTagName("html")[0].setAttribute("lang", user_language);
+	nodes.find(node => node.lang == user_language).classList.add("show");
 </script>
 </html>
