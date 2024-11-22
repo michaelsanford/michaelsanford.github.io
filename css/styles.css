@@ -164,7 +164,7 @@ a {
 	fill: var(--text);
 }
 
-.badges {
+.badges a {
 	margin-bottom: 1.5rem;
 }
 
