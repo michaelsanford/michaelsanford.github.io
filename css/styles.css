@@ -168,6 +168,14 @@ a {
 	margin-bottom: 1.5rem;
 }
 
+.badges.networks {
+	margin-top: 20px;
+}
+
+.badges.networks img {
+	max-height: 58px;
+}
+
 .certs a img {
 	border-radius: 10px;
 }
