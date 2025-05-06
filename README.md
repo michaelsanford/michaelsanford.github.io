@@ -18,9 +18,3 @@ I also hardened the security by adding a CSP and a Feature Policy. I also added 
 
 Felt like adding [a Lighthouse audit](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-github-actions/) to this as well,
 becuase code quality speaks, right?
-
-## License
-
-This is a fork from @flexdinesh's nice project; it's a Ship of Thesesus at this point.
-
-MIT © Dinesh Pandiyan
