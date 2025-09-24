@@ -1,9 +1,7 @@
 /* Typography */
-@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Source+Sans+Pro:400,700&display=swap');
 
 html {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-display: swap;
 	box-sizing: border-box;
 	font-size: 12px;
 	font-weight: 400;
@@ -97,7 +95,6 @@ section.show {
 
 main .intro {
 	font-family: 'Merriweather Sans', sans-serif;
-	font-display: swap;
 	font-size: 3.75em;
 	font-weight: 700;
 }
