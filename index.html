@@ -16,20 +16,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta http-equiv="Content-Security-Policy" content="
-		script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager;
+		script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager.com;
 		style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com; 
-		font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com http://fonts.googleapis.com;
-		img-src 'self' https://www.gravatar.com https://i0.wp.com https://images.credly.com https://learn.microsoft.com/ https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com" />
+		font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
+		connect-src 'self' https://www.google-analytics.com https://analytics.google.com;
+		img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com" />
 
-	<meta http-equiv="Feature-Policy" content="
-		autoplay: 'none';
-		camera: 'none';
-		display-capture: 'none';
-		geolocation: 'none';
-		microphone 'none';
-		geolocation 'none';
-		wake-lock: 'none';
-	" />
+	<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), autoplay=(), display-capture=(), wake-lock=()" />
 
 	<meta name="robots" content="index">
 
@@ -61,8 +54,13 @@
 
 	<link rel="icon" href="favicon.ico" type="image/png" />
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://use.fontawesome.com">
+
 	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Source+Sans+Pro:400,700&display=swap">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
 </head>
 
 <body>
@@ -105,23 +103,23 @@
 
 		<div class="badges certs">
 			<a href="https://www.credly.com/badges/5aaf70cd-7471-4032-bdd0-333e80946668" target="_blank" rel="me noopener">
-				<img class="share-ui__badge-image" height="140" width="140" src="https://images.credly.com/size/340x340/images/dcd99b5b-da24-40a6-9364-62126d590c37/blob" alt="CompTIA CySA+ ce Certification">
+				<img class="share-ui__badge-image" height="140" width="140" src="https://images.credly.com/size/340x340/images/dcd99b5b-da24-40a6-9364-62126d590c37/blob" alt="CompTIA CySA+ ce Certification" loading="lazy">
 			</a>
 
-			<a href="https://www.credly.com/badges/fbe47ca8-ff87-4a9a-b7aa-b5c344aef4f6" target="_blank" rel="me noopener">
+			<!-- <a href="https://www.credly.com/badges/fbe47ca8-ff87-4a9a-b7aa-b5c344aef4f6" target="_blank" rel="me noopener">
 				<img class="share-ui__badge-image" height="140" width="140" src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Certified Cloud Practitioner CLF-C01">
-			</a>
+			</a> -->
 
-			<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/280DBD66BEF224ED?sharingId=9BE7EF31173E5AE4" target="_blank" rel="me noopener">
+			<!-- <a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/280DBD66BEF224ED?sharingId=9BE7EF31173E5AE4" target="_blank" rel="me noopener">
 				<img class="share-ui__badge-image" height="140" width="140" src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Certified: Azure Fundamentals AZ-900">
-			</a>
+			</a> -->
 
 			<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="me noopener">
-                                <img class="share-ui__badge-image" height="140" width="140" src="https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure Administrator Associate AZ-104">
+                <img class="share-ui__badge-image" height="140" width="140" src="https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure Administrator Associate AZ-104" loading="lazy">
 			</a>
 
 			<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="me noopener">
-				<img class="share-ui__badge-image" height="140" width="140" src="https://i0.wp.com/advancedems.ca/wp-content/uploads/2019/04/hs_logo_square.png?resize=140%2C140&ssl=1" alt="Heart and Stroke: Standard/Intermediate First Aid - Level C + CPR">
+				<img class="share-ui__badge-image" height="140" width="140" src="https://i0.wp.com/advancedems.ca/wp-content/uploads/2019/04/hs_logo_square.png?resize=140%2C140&ssl=1" alt="Heart and Stroke: Standard/Intermediate First Aid - Level C + CPR" loading="lazy">
 			</a>
 		</div>
 
@@ -134,31 +132,31 @@
 				<i class="fab fa-mastodon"></i>
 				@unitvector
 			</a> -->
-			<a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile">
-				<i class="fab fa-stack-overflow"></i>
-				StackOverflow
-			</a>
 			<a target="_blank" rel="me noopener" href="https://github.com/michaelsanford">
 				<i class="fab fa-github"></i>
 				Github
 			</a>
-			<a target="_blank" rel="me noopener" href="https://dev.to/msanford">
+			<a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile">
+				<i class="fab fa-stack-overflow"></i>
+				StackOverflow
+			</a>
+			<!-- <a target="_blank" rel="me noopener" href="https://dev.to/msanford">
 				<i class="fab fa-dev"></i>
 				Dev.to
-			</a>
-			<a target="_blank" rel="me noopener" href="https://hub.docker.com/u/msanford">
+			</a> -->
+			<!-- <a target="_blank" rel="me noopener" href="https://hub.docker.com/u/msanford">
 				<i class="fab fa-docker"></i>
 				Docker Hub
-			</a>
-			<a target="_blank" rel="me noopener" href="https://www.kaggle.com/michaelsanford">
+			</a> -->
+			<!-- <a target="_blank" rel="me noopener" href="https://www.kaggle.com/michaelsanford">
 				<i class="fab fa-kaggle"></i>
 				Kaggle
-			</a>
+			</a> -->
 			<a target="_blank" rel="me noopener" href="https://orcid.org/0000-0002-1209-0301">
 				<i class="fab fa-orcid"></i>
 				ORCID
 			</a>
-			<a target="_blank" rel="me noopener" href="https://threema.id/JWZ985BH" title="5 c 7 1 3 8 b f
+			<!-- <a target="_blank" rel="me noopener" href="https://threema.id/JWZ985BH" title="5 c 7 1 3 8 b f
 2 f 6 f c 9 a e
 2 9 d 4 0 b 3 2
 a 0 6 7 d 4 3 2
@@ -168,7 +166,7 @@ c 8 e d 7 c f 3
 4 b 3 2 3 0 0 c">
 				<i class="fas fa-comment-dots"></i>
 				Threema
-			</a>
+			</a> -->
 			<!-- <a target="_blank" rel="me noopener" href="https://addons.mozilla.org/en-CA/firefox/user/15446702/">
 				<i class="fab fa-firefox"></i>
 				Firefox Extensions
@@ -188,11 +186,11 @@ c 8 e d 7 c f 3
 		</div>
 		<div class="badges networks">
 			<a href="https://stackexchange.com/users/39774/msanford" target="_blank" rel="me noopener">
-				<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="profile for msanford on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for msanford on Stack Exchange" />
+				<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="profile for msanford on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for msanford on Stack Exchange" loading="lazy" />
 			</a>
 			&NonBreakingSpace;
 			<a href="https://tryhackme.com/p/unit.vector" target="_blank" rel="me noopener">
-				<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" height="58" alt="TryHackMe">
+				<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" height="58" alt="TryHackMe" loading="lazy">
 			</a>
 		</div>
 	</main>

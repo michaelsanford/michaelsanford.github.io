@@ -2,22 +2,35 @@
 
 This is my minimal landing page.
 
-## L10n Support (sort of...)
-
-Being a polyglot developer _and human_, I added multi-language support.
-
-The hero element is translated into the languages in which I feel like communicating.
-
 On load, the page checks your browser's preferred language and shows only the matching translation (falling back to English if needed).
 
-# CSP and FSP
+## Technical Features
 
-I also hardened the security by adding a CSP and a Feature Policy. I also added an app manifest.
+### Security
 
-# Added Lighthouse Audit
+- **Content Security Policy (CSP)**: Restricts resource loading to prevent XSS attacks
+- **Permissions Policy**: Disables unnecessary browser features (camera, microphone, geolocation, etc.)
+- **Secure external resources**: All third-party content loaded over HTTPS
 
-Felt like adding [a Lighthouse audit](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-github-actions/) to this as well,
-becuase code quality speaks, right?
+### Performance
+
+- **DNS preconnect hints**: Early connection establishment for critical domains (Google Fonts, FontAwesome)
+- **Lazy loading images**: Badge images load only when needed
+- **Optimized font loading**: Google Fonts with `font-display: swap` for immediate text visibility
+- **Minimal dependencies**: Only essential external resources
+
+### Progressive Web App
+
+- **Web App Manifest**: Enables installation and native app-like experience
+- **Theme colors**: Consistent branding across platforms
+- **Responsive icons**: Multiple sizes for different devices
+
+### Accessibility & SEO
+
+- **Semantic HTML**: Proper document structure
+- **Alt text**: All images have descriptive alternative text
+- **Language detection**: Automatic content localization based on browser preferences
+- **Meta tags**: Complete OpenGraph and Twitter Card support
 
 ## Running Locally
 
