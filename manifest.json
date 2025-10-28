@@ -11,7 +11,7 @@
     "start_url": "/",
     "scope": "/",
 
-    "content_security_policy": "script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com; font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com",
+
     
     "icons": [{
         "src": "/assets/android-chrome-192x192.png",
