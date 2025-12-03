@@ -15,12 +15,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta http-equiv="Content-Security-Policy" content="
-		script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager.com;
-		style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com; 
-		font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
-		connect-src 'self' https://www.google-analytics.com https://analytics.google.com;
-		img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com" />
+        <meta http-equiv="Content-Security-Policy" content="
+                default-src 'self';
+                script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager.com;
+                style-src 'self';
+                font-src 'self';
+                connect-src 'self' https://www.google-analytics.com https://analytics.google.com;
+                img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com;
+                frame-src 'none';
+                child-src 'none'" />
 
 	<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), autoplay=(), display-capture=(), wake-lock=()" />
 
@@ -54,13 +57,7 @@
 
 	<link rel="icon" href="favicon.ico" type="image/png" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://use.fontawesome.com">
-
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Source+Sans+Pro:400,700&display=swap">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+        <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -123,39 +120,35 @@
 			</a>
 		</div>
 
-		<div class="icons-social">
-			<a target="_blank" rel="me noopener" href="https://www.linkedin.com/in/michaelsanford0">
-				<i class="fab fa-linkedin"></i>
-				LinkedIn
-			</a>
-			<!-- <a rel="me noopener" target="_blank" href="https://infosec.exchange/@unitvector">
-				<i class="fab fa-mastodon"></i>
-				@unitvector
-			</a> -->
-			<a target="_blank" rel="me noopener" href="https://github.com/michaelsanford">
-				<i class="fab fa-github"></i>
-				Github
-			</a>
-			<a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile">
-				<i class="fab fa-stack-overflow"></i>
-				StackOverflow
-			</a>
-			<!-- <a target="_blank" rel="me noopener" href="https://dev.to/msanford">
-				<i class="fab fa-dev"></i>
-				Dev.to
+                <div class="icons-social">
+                        <a target="_blank" rel="me noopener" href="https://www.linkedin.com/in/michaelsanford0">
+                                LinkedIn
+                        </a>
+                        <!-- <a rel="me noopener" target="_blank" href="https://infosec.exchange/@unitvector">
+                                <i class="fab fa-mastodon"></i>
+                                @unitvector
+                        </a> -->
+                        <a target="_blank" rel="me noopener" href="https://github.com/michaelsanford">
+                                Github
+                        </a>
+                        <a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile">
+                                StackOverflow
+                        </a>
+                        <!-- <a target="_blank" rel="me noopener" href="https://dev.to/msanford">
+                                <i class="fab fa-dev"></i>
+                                Dev.to
 			</a> -->
 			<!-- <a target="_blank" rel="me noopener" href="https://hub.docker.com/u/msanford">
 				<i class="fab fa-docker"></i>
 				Docker Hub
 			</a> -->
-			<!-- <a target="_blank" rel="me noopener" href="https://www.kaggle.com/michaelsanford">
-				<i class="fab fa-kaggle"></i>
-				Kaggle
-			</a> -->
-			<a target="_blank" rel="me noopener" href="https://orcid.org/0000-0002-1209-0301">
-				<i class="fab fa-orcid"></i>
-				ORCID
-			</a>
+                        <!-- <a target="_blank" rel="me noopener" href="https://www.kaggle.com/michaelsanford">
+                                <i class="fab fa-kaggle"></i>
+                                Kaggle
+                        </a> -->
+                        <a target="_blank" rel="me noopener" href="https://orcid.org/0000-0002-1209-0301">
+                                ORCID
+                        </a>
 			<!-- <a target="_blank" rel="me noopener" href="https://threema.id/JWZ985BH" title="5 c 7 1 3 8 b f
 2 f 6 f c 9 a e
 2 9 d 4 0 b 3 2
@@ -179,15 +172,13 @@ c 8 e d 7 c f 3
 				<i class="fas fa-chart-line"></i>
 				TradingView Ideas
 			</a> -->
-			<a target="_blank" rel="me noopener" href="https://lichess.org/@/msanford">
-				<i class="fas fa-chess"></i>
-				Chess
-			</a>
-			<a target="_blank" rel="me noopener" href="https://ko-fi.com/eigenvector">
-				<i class="fas fa-mug-hot"></i>
-				Ko-Fi
-			</a>
-		</div>
+                        <a target="_blank" rel="me noopener" href="https://lichess.org/@/msanford">
+                                Chess
+                        </a>
+                        <a target="_blank" rel="me noopener" href="https://ko-fi.com/eigenvector">
+                                Ko-Fi
+                        </a>
+                </div>
 		<div class="badges networks">
 			<a href="https://stackexchange.com/users/39774/msanford" target="_blank" rel="me noopener">
 				<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="profile for msanford on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for msanford on Stack Exchange" loading="lazy" />

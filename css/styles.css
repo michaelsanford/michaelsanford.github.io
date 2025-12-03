@@ -1,7 +1,7 @@
 /* Typography */
 
 html {
-	font-family: 'Source Sans Pro', sans-serif;
+        font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 	box-sizing: border-box;
 	font-size: 12px;
 	font-weight: 400;
@@ -69,12 +69,8 @@ img {
 	--accent: rgb(240, 240, 0);
 }
 
-.icons-social i {
-	font-size: 3em;
-}
-
 main {
-	display: flex;
+        display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	justify-content: center;
@@ -94,9 +90,9 @@ section.show {
 }
 
 main .intro {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 3.75em;
-	font-weight: 700;
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 3.75em;
+        font-weight: 700;
 }
 
 main .intro .name {
@@ -130,35 +126,22 @@ main .tagline .spacer {
 	color: var(--accent);
 }
 
-.icons-social i {
-	padding: 20px;
-}
-
 a {
-	text-decoration: none;
+        text-decoration: none;
 }
 
 .icons-social a {
-	display: inline-flex;
-	flex-direction: column;
-	color: transparent;
-	max-width: 100px;
-}
-
-.icons-social a i {
-	color: var(--text);
+        display: inline-flex;
+        flex-direction: column;
+        color: var(--text);
+        max-width: 100px;
+        padding: 20px;
 }
 
 .icons-social a:hover,
-.icons-social a:hover i,
-.icons-social a:focus,
-.icons-social a:focus i {
-	transition: color 1s ease;
-	color: var(--accent);
-}
-
-.icons-social a svg path {
-	fill: var(--text);
+.icons-social a:focus {
+        transition: color 1s ease;
+        color: var(--accent);
 }
 
 .badges a {
