@@ -23,9 +23,12 @@
                 connect-src 'self' https://www.google-analytics.com https://analytics.google.com;
                 img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com;
                 frame-src 'none';
-                child-src 'none'" />
+                child-src 'none';
+				form-action 'none'"" />
 
 	<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), autoplay=(), display-capture=(), wake-lock=()" />
+
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 
 	<meta name="robots" content="index">
 
