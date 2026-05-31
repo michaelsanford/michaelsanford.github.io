@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<!-- Google tag (gtag.js) -->
@@ -15,46 +15,39 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta http-equiv="Content-Security-Policy" content="
-                default-src 'self';
-                script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager.com;
-                style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com;
-                font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
-                connect-src 'self' https://www.google-analytics.com https://analytics.google.com;
-                img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com;
-                frame-src 'none';
-                child-src 'none';
-				form-action 'none'"" />
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self';
+		script-src 'self' 'sha256-sWMGNJbLfQQvzc79bTxKDoR9SK6ksZRl3FAxt8xZy2M=' https://www.googletagmanager.com;
+		style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com;
+		font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
+		connect-src 'self' https://www.google-analytics.com https://analytics.google.com;
+		img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com;
+		frame-src 'none';
+		child-src 'none';
+		form-action 'none'"" />
 
 	<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), autoplay=(), display-capture=(), wake-lock=()" />
-
 	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-
 	<meta name="robots" content="index">
-
 	<meta name="author" content="Michael Sanford">
 	<link rel="canonical" href="https://www.michaelsanford.com" id="canonical_url">
 
 	<link rel="manifest" href="/manifest.json">
-
 	<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 	<meta name="theme-color" content="#012456">
 
-	<meta name="description"
-		content="I am a Security Analyst, Polyglot Software Developer, and Machine Learning enthusiast.">
+	<meta name="description" content="Personal website of Michael Sanford: Director of Operations, Cyber Security Analyst, Polyglot Developer, and Machine Learning enthusiast.">
 
 	<meta property="og:site_name" content="michaelsanford.com">
 	<meta property="og:url" content="https://michaelsanford.com">
-	<meta property="og:title" content="Hi, I'm Michael!">
-	<meta property="og:description"
-		content="I am a Security Analyst, Polyglot Software Developer, and Machine Learning enthusiast.">
+	<meta property="og:title" content="Michael Sanford - Portfolio">
+	<meta property="og:description" content="Director of Operations, Cyber Security Analyst, Polyglot Developer, and Machine Learning enthusiast.">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@msanford">
 	<meta name="twitter:url" content="https://michaelsanford.com">
-	<meta name="twitter:title" content="Hi, I'm Michael!">
-	<meta name="twitter:description"
-		content="I am a Security Analyst, Polyglot Software Developer, and Machine Learning enthusiast.">
+	<meta name="twitter:title" content="Michael Sanford - Portfolio">
+	<meta name="twitter:description" content="Director of Operations, Cyber Security Analyst, Polyglot Developer, and Machine Learning enthusiast.">
 
 	<title>Michael Sanford</title>
 
@@ -64,158 +57,289 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://use.fontawesome.com">
 
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Source+Sans+Pro:400,700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<script src="js/main.js" defer></script>
 </head>
 
 <body>
+	<header>
+		<div class="container nav-content">
+			<a href="#" class="logo">Michael <span>Sanford</span></a>
+			<div class="lang-switcher">
+				<button class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
+				<button class="lang-btn" data-lang="fr" aria-label="Français" aria-pressed="false">FR</button>
+				<button class="lang-btn" data-lang="de" aria-label="Deutsch" aria-pressed="false">DE</button>
+			</div>
+		</div>
+	</header>
+
 	<main>
-		<!-- <aside>
-			<figure>
-				<img src="https://www.gravatar.com/avatar/931c62c44b824b7d3975917fbe392846?s=250"
-					width="250" height="250"
-					alt="A photograph of my face" />
-			</figure>
-		</aside> -->
-		<section lang="en">
-			<div class="intro">Hello, I'm <span class="name">Michael</span>!</div>
-			<div class="title">Director of Operations</div>
-			<div class="tagline">
-				Cyber Security <span class="spacer">|</span>
-				Compliance <span class="spacer">|</span>
-				Polyglot Developer <span class="spacer">|</span>
-				Machine Learning Enthusiast
+		<!-- Hero Section -->
+		<section class="hero container" aria-labelledby="hero-heading">
+			<div class="welcome" data-i18n="intro">Hello, I'm</div>
+			<h1 id="hero-heading"><span class="name-highlight">Michael Sanford</span></h1>
+			<div class="job-title" data-i18n="title">Director of Operations</div>
+			<div class="tagline-pills">
+				<span class="pill">Cyber Security</span>
+				<span class="pill">Compliance</span>
+				<span class="pill">Polyglot Developer</span>
+				<span class="pill">Machine Learning</span>
+				<span class="pill">Virtualization</span>
 			</div>
-		</section>
-		<section lang="fr">
-			<div class="intro">Bonjour, ici <span class="name">Michaël</span>!</div>
-			<div class="title">Directeur des Opérations</div>
-			<div class="tagline">
-				Analyste en cybersécurité <span class="spacer">|</span>
-				Développeur polyglotte <span class="spacer">|</span>
-				Amateur de l'intelligence artificielle
-			</div>
-		</section>
-		<section lang="de">
-			<div class="intro">Hallo, ich heiße <span class="name">Michael</span>!</div>
-			<div class="title">Direktor der Operationsabteilung</div>
-			<div class="tagline">
-				Sicherheit Analyst <span class="spacer">|</span>
-				Software-Entwickler <span class="spacer">|</span>
-				Student des maschinellen Lernens
+			<div class="intro-blurb" data-i18n="blurb">
+				I am a security-focused Director of Operations, cloud architect, and polyglot developer. Driven by a passion for privacy, operational resilience, and UX/DX, I thrive at the intersection of robust security engineering, compliance, and building tools that developers love to use.
 			</div>
 		</section>
 
-		<div class="badges certs">
-			<a href="https://cp.certmetrics.com/comptia/en/public/verify/credential/0391D2PQBNE4Q65V" target="_blank" rel="me noopener">
-				<img class="share-ui__badge-image" height="140" width="140" src="https://images.credly.com/size/340x340/images/dcd99b5b-da24-40a6-9364-62126d590c37/blob" alt="CompTIA CySA+ ce Certification" loading="lazy">
-			</a>
+		<!-- Professional Credentials Section -->
+		<section id="credentials" class="section container" aria-labelledby="credentials-heading">
+			<h2 id="credentials-heading" class="section-title" data-i18n="certsTitle">Professional Credentials</h2>
+			
+			<div class="certs-grid">
+				<!-- CompTIA CySA+ -->
+				<div class="cert-card">
+					<div class="cert-badge-wrapper">
+						<a href="https://cp.certmetrics.com/comptia/en/public/verify/credential/0391D2PQBNE4Q65V" target="_blank" rel="noopener" aria-label="Verify CySA+ Certification">
+							<img src="https://images.credly.com/size/340x340/images/dcd99b5b-da24-40a6-9364-62126d590c37/blob" alt="CompTIA CySA+ ce Certification" loading="lazy" data-i18n="badge_cysa">
+						</a>
+					</div>
+					<h4 data-i18n="badge_cysa">CompTIA CySA+ ce Certification</h4>
+					<p>CompTIA</p>
+				</div>
 
-			<!-- <a href="https://www.credly.com/badges/fbe47ca8-ff87-4a9a-b7aa-b5c344aef4f6" target="_blank" rel="me noopener">
-				<img class="share-ui__badge-image" height="140" width="140" src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Certified Cloud Practitioner CLF-C01">
-			</a> -->
+				<!-- Azure Administrator -->
+				<div class="cert-card">
+					<div class="cert-badge-wrapper">
+						<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="noopener" aria-label="Verify Azure Administrator Certification">
+							<img src="https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure Administrator Associate AZ-104" loading="lazy" data-i18n="badge_az104">
+						</a>
+					</div>
+					<h4 data-i18n="badge_az104">Microsoft Certified: Azure Administrator Associate</h4>
+					<p>Microsoft</p>
+				</div>
 
-			<!-- <a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/280DBD66BEF224ED?sharingId=9BE7EF31173E5AE4" target="_blank" rel="me noopener">
-				<img class="share-ui__badge-image" height="140" width="140" src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Certified: Azure Fundamentals AZ-900">
-			</a> -->
+				<!-- First Aid -->
+				<div class="cert-card">
+					<div class="cert-badge-wrapper">
+						<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="noopener" aria-label="Heart & Stroke First Aid Course Standard">
+							<img src="https://i0.wp.com/advancedems.ca/wp-content/uploads/2019/04/hs_logo_square.png?resize=140%2C140&ssl=1" alt="Heart and Stroke: Standard/Intermediate First Aid - Level C + CPR" loading="lazy" data-i18n="badge_firstaid">
+						</a>
+					</div>
+					<h4 data-i18n="badge_firstaid">Heart & Stroke: Standard First Aid + CPR</h4>
+					<p>Heart & Stroke Foundation</p>
+				</div>
+			</div>
+		</section>
 
-			<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="me noopener">
-                <img class="share-ui__badge-image" height="140" width="140" src="https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure Administrator Associate AZ-104" loading="lazy">
-			</a>
+		<!-- Connect Section -->
+		<section id="connect" class="section container" aria-labelledby="connect-heading">
+			<h2 id="connect-heading" class="section-title" data-i18n="connectTitle">Connect & Network</h2>
+			
+			<div class="connect-container">
+				<div class="social-dock">
+					<a target="_blank" rel="me noopener" href="https://www.linkedin.com/in/michaelsanford0" class="social-item">
+						<i class="fab fa-linkedin"></i> LinkedIn
+					</a>
+					<a target="_blank" rel="me noopener" href="https://github.com/michaelsanford" class="social-item">
+						<i class="fab fa-github"></i> GitHub
+					</a>
+					<a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile" class="social-item">
+						<i class="fab fa-stack-overflow"></i> StackOverflow
+					</a>
+					<a target="_blank" rel="me noopener" href="https://orcid.org/0000-0002-1209-0301" class="social-item">
+						<i class="fab fa-orcid"></i> ORCID
+					</a>
+					<a target="_blank" rel="me noopener" href="https://lichess.org/@/msanford" class="social-item">
+						<i class="fas fa-chess"></i> Chess
+					</a>
+					<a target="_blank" rel="me noopener" href="https://ko-fi.com/eigenvector" class="social-item">
+						<i class="fas fa-mug-hot"></i> Ko-Fi
+					</a>
+					
+					<!-- Preserved Commented Out Social Options for future customization -->
+					<!--
+					<a rel="me noopener" target="_blank" href="https://infosec.exchange/@unitvector" class="social-item">
+						<i class="fab fa-mastodon"></i> Mastodon
+					</a>
+					<a target="_blank" rel="me noopener" href="https://dev.to/msanford" class="social-item">
+						<i class="fab fa-dev"></i> Dev.to
+					</a>
+					<a target="_blank" rel="me noopener" href="https://hub.docker.com/u/msanford" class="social-item">
+						<i class="fab fa-docker"></i> Docker Hub
+					</a>
+					<a target="_blank" rel="me noopener" href="https://www.kaggle.com/michaelsanford" class="social-item">
+						<i class="fab fa-kaggle"></i> Kaggle
+					</a>
+					<a target="_blank" rel="me noopener" href="https://threema.id/JWZ985BH" class="social-item">
+						<i class="fas fa-comment-dots"></i> Threema
+					</a>
+					-->
+				</div>
 
-			<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="me noopener">
-				<img class="share-ui__badge-image" height="140" width="140" src="https://i0.wp.com/advancedems.ca/wp-content/uploads/2019/04/hs_logo_square.png?resize=140%2C140&ssl=1" alt="Heart and Stroke: Standard/Intermediate First Aid - Level C + CPR" loading="lazy">
-			</a>
-		</div>
+				<div class="network-badges">
+					<a href="https://stackexchange.com/users/39774/msanford" target="_blank" rel="noopener">
+						<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="Profile for msanford on Stack Exchange" title="Profile for msanford on Stack Exchange" loading="lazy" />
+					</a>
+					<a href="https://tryhackme.com/p/unit.vector" target="_blank" rel="noopener">
+						<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" height="58" alt="TryHackMe Profile" loading="lazy">
+					</a>
+				</div>
+			</div>
+		</section>
 
-		<div class="icons-social">
-			<a target="_blank" rel="me noopener" href="https://www.linkedin.com/in/michaelsanford0">
-				<i class="fab fa-linkedin"></i>
-				LinkedIn
-			</a>
-			<!-- <a rel="me noopener" target="_blank" href="https://infosec.exchange/@unitvector">
-				<i class="fab fa-mastodon"></i>
-				@unitvector
-			</a> -->
-			<a target="_blank" rel="me noopener" href="https://github.com/michaelsanford">
-				<i class="fab fa-github"></i>
-				Github
-			</a>
-			<a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile">
-				<i class="fab fa-stack-overflow"></i>
-				StackOverflow
-			</a>
-			<!-- <a target="_blank" rel="me noopener" href="https://dev.to/msanford">
-				<i class="fab fa-dev"></i>
-				Dev.to
-			</a> -->
-			<!-- <a target="_blank" rel="me noopener" href="https://hub.docker.com/u/msanford">
-				<i class="fab fa-docker"></i>
-				Docker Hub
-			</a> -->
-			<!-- <a target="_blank" rel="me noopener" href="https://www.kaggle.com/michaelsanford">
-				<i class="fab fa-kaggle"></i>
-				Kaggle
-			</a> -->
-			<a target="_blank" rel="me noopener" href="https://orcid.org/0000-0002-1209-0301">
-				<i class="fab fa-orcid"></i>
-				ORCID
-			</a>
-			<!-- <a target="_blank" rel="me noopener" href="https://threema.id/JWZ985BH" title="5 c 7 1 3 8 b f
-2 f 6 f c 9 a e
-2 9 d 4 0 b 3 2
-a 0 6 7 d 4 3 2
-1 2 1 3 6 7 9 c
-1 c d 9 a b e 6
-c 8 e d 7 c f 3
-4 b 3 2 3 0 0 c">
-				<i class="fas fa-comment-dots"></i>
-				Threema
-			</a> -->
-			<!-- <a target="_blank" rel="me noopener" href="https://addons.mozilla.org/en-CA/firefox/user/15446702/">
-				<i class="fab fa-firefox"></i>
-				Firefox Extensions
-			</a> -->
-			<!-- <a target="_blank" rel="me noopener" href="https://addons.mozilla.org/en-CA/firefox/user/15446702/">
-				<i class="fab fa-chrome"></i>
-				Chrome Extensions
-			</a> -->
-			<!-- <a target="_blank" rel="me noopener" href="https://www.tradingview.com/u/msanford/">
-				<i class="fas fa-chart-line"></i>
-				TradingView Ideas
-			</a> -->
-			<a target="_blank" rel="me noopener" href="https://lichess.org/@/msanford">
-				<i class="fas fa-chess"></i>
-				Chess
-			</a>
-			<a target="_blank" rel="me noopener" href="https://ko-fi.com/eigenvector">
-				<i class="fas fa-mug-hot"></i>
-				Ko-Fi
-			</a>
-		</div>
-		<div class="badges networks">
-			<a href="https://stackexchange.com/users/39774/msanford" target="_blank" rel="me noopener">
-				<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="profile for msanford on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for msanford on Stack Exchange" loading="lazy" />
-			</a>
-			&NonBreakingSpace;
-			<a href="https://tryhackme.com/p/unit.vector" target="_blank" rel="me noopener">
-				<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" height="58" alt="TryHackMe" loading="lazy">
-			</a>
-		</div>
+		<!-- Featured Projects Section -->
+		<section id="projects" class="section container" aria-labelledby="projects-heading">
+			<h2 id="projects-heading" class="section-title" data-i18n="projectsTitle">Featured Projects</h2>
+			
+			<div class="projects-grid">
+				<!-- Project 1: Boomoji -->
+				<div class="project-card">
+					<div class="project-icon">
+						<i class="fas fa-gamepad"></i>
+						<div class="tech-badges">
+							<span class="tech-badge js">Vanilla JS</span>
+							<span class="tech-badge pwa">PWA</span>
+							<span class="tech-badge offline">Offline</span>
+						</div>
+					</div>
+					<h3>Boomoji</h3>
+					<p data-i18n="project_boomoji_desc">A mobile-first progressive web app emoji game for toddlers — tap, pop, and discover across eight game modes.</p>
+					<div class="project-links">
+						<a href="https://github.com/michaelsanford/Boomoji" class="btn btn-secondary" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+						</a>
+						<a href="https://www.michaelsanford.com/Boomoji/" class="btn btn-primary" target="_blank" rel="noopener">
+							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 2: IntelcomTracker -->
+				<div class="project-card">
+					<div class="project-icon">
+						<i class="fas fa-terminal"></i>
+						<div class="tech-badges">
+							<span class="tech-badge csharp">C# .NET</span>
+						</div>
+					</div>
+					<h3>IntelcomTracker</h3>
+					<p data-i18n="project_intelcom_desc">A terminal dashboard for tracking Intelcom courier packages, written in C# .NET.</p>
+					<div class="project-links">
+						<a href="https://github.com/michaelsanford/IntelcomTracker" class="btn btn-secondary" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+						</a>
+						<a href="https://www.michaelsanford.com/IntelcomTracker/" class="btn btn-primary" target="_blank" rel="noopener">
+							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 3: mdr -->
+				<div class="project-card">
+					<div class="project-icon">
+						<i class="fas fa-terminal"></i>
+						<div class="tech-badges">
+							<span class="tech-badge csharp">C# .NET</span>
+						</div>
+					</div>
+					<h3>mdr</h3>
+					<p data-i18n="project_mdr_desc">A terminal Markdown reader and renderer written in C# .NET, delivering fast and beautiful document styling.</p>
+					<div class="project-links">
+						<a href="https://github.com/michaelsanford/mdr" class="btn btn-secondary" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+						</a>
+						<a href="https://www.michaelsanford.com/mdr/" class="btn btn-primary" target="_blank" rel="noopener">
+							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 4: Switch-AwsProfile -->
+				<div class="project-card">
+					<div class="project-icon">
+						<i class="fas fa-terminal"></i>
+						<div class="tech-badges">
+							<span class="tech-badge powershell">PowerShell</span>
+						</div>
+					</div>
+					<h3>Switch-AwsProfile</h3>
+					<p data-i18n="project_switch_aws_desc">An interactive PowerShell CLI tool that provides quick profile switching for AWS SSO accounts with arrow-key navigation.</p>
+					<div class="project-links">
+						<a href="https://github.com/michaelsanford/Switch-AwsProfile" class="btn btn-secondary" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 5: UnClear -->
+				<div class="project-card">
+					<div class="project-icon">
+						<i class="fas fa-puzzle-piece"></i>
+						<div class="tech-badges">
+							<span class="tech-badge js">Edge/Chrome Extension</span>
+						</div>
+					</div>
+					<h3>UnClear</h3>
+					<p data-i18n="project_unclear_desc">An Edge/Chrome browser extension that cleans up LinkedIn profiles by removing the 'Verify with CLEAR' buttons.</p>
+					<div class="project-links">
+						<a href="https://github.com/michaelsanford/UnClear" class="btn btn-secondary" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+						</a>
+						<a href="https://chromewebstore.google.com/detail/unclear/bilmbccofgemneflaknfifappajdbcco" class="btn btn-primary" target="_blank" rel="noopener">
+							<i class="fab fa-chrome"></i> <span data-i18n="chrome_store">Chrome Web Store</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 6: node-virtualbox -->
+				<div class="project-card">
+					<div class="project-icon">
+						<i class="fab fa-node-js"></i>
+						<div class="tech-badges">
+							<span class="tech-badge maintainer">Maintainer</span>
+							<span class="tech-badge nodejs">Node.js</span>
+						</div>
+					</div>
+					<h3>node-virtualbox</h3>
+					<p data-i18n="project_node_virtualbox_desc">A popular Node.js library wrapper around the VirtualBox VBoxManage CLI tool to manage and control virtual machines.</p>
+					<div class="project-links">
+						<a href="https://github.com/Node-Virtualization/node-virtualbox" class="btn btn-secondary" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 7: Speak-EPUB -->
+				<div class="project-card">
+					<div class="project-icon">
+						<i class="fab fa-python"></i>
+						<div class="tech-badges">
+							<span class="tech-badge python">Python</span>
+						</div>
+					</div>
+					<h3>Speak-EPUB</h3>
+					<p data-i18n="project_speak_epub_desc">A Python tool that converts EPUB eBooks into high-quality audiobooks using Microsoft Edge's neural text-to-speech engine.</p>
+					<div class="project-links">
+						<a href="https://github.com/michaelsanford/Speak-EPUB" class="btn btn-secondary" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+						</a>
+						<a href="https://www.michaelsanford.com/Speak-EPUB/" class="btn btn-primary" target="_blank" rel="noopener">
+							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2026 Michael Sanford. All rights reserved.</p>
+		</div>
+	</footer>
 </body>
-<script>
-	const nodes = [...document.querySelectorAll("section")];
-	const available = nodes.map(e => e.getAttribute("lang"));
 
-	user_language = navigator.language.split("-")[0];
-
-	if (!available.includes(user_language)) {
-		user_language = "en";
-	}
-	
-	document.getElementsByTagName("html")[0].setAttribute("lang", user_language);
-	nodes.find(node => node.lang == user_language).classList.add("show");
-</script>
 </html>
