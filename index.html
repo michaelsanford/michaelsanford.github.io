@@ -68,41 +68,59 @@
 	<header>
 		<div class="container nav-content">
 			<a href="#" class="logo">Michael <span>Sanford</span></a>
-			<div class="lang-switcher">
-				<button class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
-				<button class="lang-btn" data-lang="fr" aria-label="Français" aria-pressed="false">FR</button>
-				<button class="lang-btn" data-lang="de" aria-label="Deutsch" aria-pressed="false">DE</button>
+			
+			<nav class="nav-links">
+				<a href="#hi" data-i18n="nav_hi">Intro</a>
+				<a href="#certs" data-i18n="nav_certs">Credentials</a>
+				<a href="#projects" data-i18n="nav_projects">Projects</a>
+				<a href="#social" data-i18n="nav_social">Connect</a>
+			</nav>
+
+			<div class="nav-actions">
+				<div class="social-links">
+					<a href="https://github.com/michaelsanford" target="_blank" rel="noopener" aria-label="GitHub" class="nav-social-item">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/michaelsanford0" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-social-item">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+				<div class="lang-switcher">
+					<button class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
+					<button class="lang-btn" data-lang="fr" aria-label="Français" aria-pressed="false">FR</button>
+					<button class="lang-btn" data-lang="de" aria-label="Deutsch" aria-pressed="false">DE</button>
+				</div>
 			</div>
 		</div>
 	</header>
 
 	<main>
 		<!-- Hero Section -->
-		<section class="hero container" aria-labelledby="hero-heading">
+		<section id="hi" class="hero container" aria-labelledby="hero-heading">
 			<div class="welcome" data-i18n="intro">Hello, I'm</div>
 			<h1 id="hero-heading"><span class="name-highlight">Michael Sanford</span></h1>
-			<div class="job-title" data-i18n="title">Director of Operations</div>
+			<div class="job-title" data-i18n="title">Director of Operations & Privacy Officer</div>
 			<div class="tagline-pills">
-				<span class="pill">Cyber Security</span>
-				<span class="pill">Compliance</span>
-				<span class="pill">Polyglot Developer</span>
-				<span class="pill">Machine Learning</span>
-				<span class="pill">Virtualization</span>
+				<span class="pill" data-i18n="pill_cybersecurity">Cybersecurity</span>
+				<span class="pill" data-i18n="pill_cloud">Cloud Architecture</span>
+				<span class="pill" data-i18n="pill_soc2">SOC 2 & Compliance</span>
+				<span class="pill" data-i18n="pill_developer">Polyglot Developer</span>
+				<span class="pill" data-i18n="pill_privacy">Privacy & Governance</span>
 			</div>
 			<div class="intro-blurb" data-i18n="blurb">
-				I am a security-focused Director of Operations, cloud architect, and polyglot developer. Driven by a passion for privacy, operational resilience, and UX/DX, I thrive at the intersection of robust security engineering, compliance, and building tools that developers love to use.
+				I lead operations, security, and compliance at a cloud-native software company, bridging nearly a decade of hands-on software engineering with the governance, privacy, and risk management that modern organizations need to get right. I build security programs (SOC 2 Type II), architect enterprise cloud infrastructure (AWS/Azure), and design tools that developers love to use.
 			</div>
 		</section>
 
 		<!-- Professional Credentials Section -->
-		<section id="credentials" class="section container" aria-labelledby="credentials-heading">
+		<section id="certs" class="section container" aria-labelledby="credentials-heading">
 			<h2 id="credentials-heading" class="section-title" data-i18n="certsTitle">Professional Credentials</h2>
 			
 			<div class="certs-grid">
 				<!-- CompTIA CySA+ -->
 				<div class="cert-card">
 					<div class="cert-badge-wrapper">
-						<a href="https://cp.certmetrics.com/comptia/en/public/verify/credential/0391D2PQBNE4Q65V" target="_blank" rel="noopener" aria-label="Verify CySA+ Certification">
+						<a href="https://cp.certmetrics.com/comptia/en/public/verify/credential/0391D2PQBNE4Q65V" target="_blank" rel="noopener" aria-label="Verify CySA+ Certification" data-i18n-aria-label="aria_verify_cysa">
 							<img src="https://images.credly.com/size/340x340/images/dcd99b5b-da24-40a6-9364-62126d590c37/blob" alt="CompTIA CySA+ ce Certification" loading="lazy" data-i18n="badge_cysa">
 						</a>
 					</div>
@@ -113,8 +131,8 @@
 				<!-- Azure Administrator -->
 				<div class="cert-card">
 					<div class="cert-badge-wrapper">
-						<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="noopener" aria-label="Verify Azure Administrator Certification">
-							<img src="https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure Administrator Associate AZ-104" loading="lazy" data-i18n="badge_az104">
+						<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="noopener" aria-label="Verify Azure Administrator Certification" data-i18n-aria-label="aria_verify_az104">
+							<img src="https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure Administrator Associate" loading="lazy" data-i18n="badge_az104">
 						</a>
 					</div>
 					<h4 data-i18n="badge_az104">Microsoft Certified: Azure Administrator Associate</h4>
@@ -124,18 +142,18 @@
 				<!-- First Aid -->
 				<div class="cert-card">
 					<div class="cert-badge-wrapper">
-						<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="noopener" aria-label="Heart & Stroke First Aid Course Standard">
-							<img src="https://i0.wp.com/advancedems.ca/wp-content/uploads/2019/04/hs_logo_square.png?resize=140%2C140&ssl=1" alt="Heart and Stroke: Standard/Intermediate First Aid - Level C + CPR" loading="lazy" data-i18n="badge_firstaid">
+						<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="noopener" aria-label="Heart & Stroke First Aid Course Standard" data-i18n-aria-label="aria_verify_firstaid">
+							<img src="https://i0.wp.com/advancedems.ca/wp-content/uploads/2019/04/hs_logo_square.png?resize=140%2C140&ssl=1" alt="Heart & Stroke: Standard First Aid + CPR" loading="lazy" data-i18n="badge_firstaid">
 						</a>
 					</div>
 					<h4 data-i18n="badge_firstaid">Heart & Stroke: Standard First Aid + CPR</h4>
-					<p>Heart & Stroke Foundation</p>
+					<p data-i18n="issuer_heart_stroke">Heart & Stroke Foundation</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Connect Section -->
-		<section id="connect" class="section container" aria-labelledby="connect-heading">
+		<section id="social" class="section container" aria-labelledby="connect-heading">
 			<h2 id="connect-heading" class="section-title" data-i18n="connectTitle">Connect & Network</h2>
 			
 			<div class="connect-container">
@@ -153,7 +171,7 @@
 						<i class="fab fa-orcid"></i> ORCID
 					</a>
 					<a target="_blank" rel="me noopener" href="https://lichess.org/@/msanford" class="social-item">
-						<i class="fas fa-chess"></i> Chess
+						<i class="fas fa-chess"></i> <span data-i18n="chess">Chess</span>
 					</a>
 					<a target="_blank" rel="me noopener" href="https://ko-fi.com/eigenvector" class="social-item">
 						<i class="fas fa-mug-hot"></i> Ko-Fi
@@ -181,10 +199,10 @@
 
 				<div class="network-badges">
 					<a href="https://stackexchange.com/users/39774/msanford" target="_blank" rel="noopener">
-						<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="Profile for msanford on Stack Exchange" title="Profile for msanford on Stack Exchange" loading="lazy" />
+						<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="Profile for msanford on Stack Exchange" title="Profile for msanford on Stack Exchange" loading="lazy" data-i18n="se_profile" data-i18n-title="se_profile" />
 					</a>
 					<a href="https://tryhackme.com/p/unit.vector" target="_blank" rel="noopener">
-						<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" height="58" alt="TryHackMe Profile" loading="lazy">
+						<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" height="58" alt="TryHackMe Profile" loading="lazy" data-i18n="thm_profile">
 					</a>
 				</div>
 			</div>
@@ -202,7 +220,7 @@
 						<div class="tech-badges">
 							<span class="tech-badge js">Vanilla JS</span>
 							<span class="tech-badge pwa">PWA</span>
-							<span class="tech-badge offline">Offline</span>
+							<span class="tech-badge offline" data-i18n="badge_offline">Offline</span>
 						</div>
 					</div>
 					<h3>Boomoji</h3>
@@ -226,7 +244,7 @@
 						</div>
 					</div>
 					<h3>IntelcomTracker</h3>
-					<p data-i18n="project_intelcom_desc">A terminal dashboard for tracking Intelcom courier packages, written in C# .NET.</p>
+					<p data-i18n="project_intelcom_desc">A custom tracking dashboard and scraper for monitoring Canadian Intelcom Express package delivery status.</p>
 					<div class="project-links">
 						<a href="https://github.com/michaelsanford/IntelcomTracker" class="btn btn-secondary" target="_blank" rel="noopener">
 							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
@@ -246,7 +264,7 @@
 						</div>
 					</div>
 					<h3>mdr</h3>
-					<p data-i18n="project_mdr_desc">A terminal Markdown reader and renderer written in C# .NET, delivering fast and beautiful document styling.</p>
+					<p data-i18n="project_mdr_desc">A terminal and web Markdown reader and renderer, delivering fast and beautiful document styling.</p>
 					<div class="project-links">
 						<a href="https://github.com/michaelsanford/mdr" class="btn btn-secondary" target="_blank" rel="noopener">
 							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
@@ -279,11 +297,11 @@
 					<div class="project-icon">
 						<i class="fas fa-puzzle-piece"></i>
 						<div class="tech-badges">
-							<span class="tech-badge js">Edge/Chrome Extension</span>
+							<span class="tech-badge js" data-i18n="badge_extension">Edge/Chrome Extension</span>
 						</div>
 					</div>
 					<h3>UnClear</h3>
-					<p data-i18n="project_unclear_desc">An Edge/Chrome browser extension that cleans up LinkedIn profiles by removing the 'Verify with CLEAR' buttons.</p>
+					<p data-i18n="project_unclear_desc">A lightweight user script and extension designed to clean up LinkedIn profiles by removing the 'Verify with CLEAR' buttons.</p>
 					<div class="project-links">
 						<a href="https://github.com/michaelsanford/UnClear" class="btn btn-secondary" target="_blank" rel="noopener">
 							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
@@ -299,7 +317,7 @@
 					<div class="project-icon">
 						<i class="fab fa-node-js"></i>
 						<div class="tech-badges">
-							<span class="tech-badge maintainer">Maintainer</span>
+							<span class="tech-badge maintainer" data-i18n="badge_maintainer">Maintainer</span>
 							<span class="tech-badge nodejs">Node.js</span>
 						</div>
 					</div>
@@ -337,7 +355,7 @@
 
 	<footer>
 		<div class="container">
-			<p>&copy; 2026 Michael Sanford. All rights reserved.</p>
+			<p>&copy; 2026 Michael Sanford. <span data-i18n="footer_rights">All rights reserved.</span></p>
 		</div>
 	</footer>
 </body>
