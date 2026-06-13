@@ -402,6 +402,8 @@ header {
 .tech-badge.dotnet { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
 .tech-badge.pwa { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
 .tech-badge.offline { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+.tech-badge.go { background: rgba(0, 173, 216, 0.15); color: #00add8; }
+.tech-badge.terminal { background: rgba(74, 222, 128, 0.15); color: #4ade80; }
 
 .project-card h3 {
 	font-family: var(--font-heading);
