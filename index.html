@@ -156,188 +156,325 @@
 		<section id="projects" class="section container" aria-labelledby="projects-heading">
 			<h2 id="projects-heading" class="section-title" data-i18n="projectsTitle">Featured Projects</h2>
 			
-			<div class="projects-grid">
+			<div class="projects-list">
 				<!-- Project 1: wtop -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-tachometer-alt"></i>
-						<div class="tech-badges">
-							<span class="tech-badge go">Go</span>
-							<span class="tech-badge terminal">Terminal</span>
+				<article class="project-row">
+					<div class="project-media">
+						<figure class="window-frame">
+							<div class="window-bar">
+								<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+								<span class="window-title">wtop — dev</span>
+							</div>
+							<img src="assets/projects/wtop.png" alt="wtop terminal system monitor showing CPU, memory, GPU and process metrics" loading="lazy">
+						</figure>
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>wtop</h3>
+							<div class="tech-badges">
+								<span class="tech-badge go">Go</span>
+								<span class="tech-badge terminal">Terminal</span>
+							</div>
+						</div>
+						<p data-i18n="project_wtop_desc">A self-contained, single-binary Windows system monitor inspired by htop — real-time CPU, memory, GPU, and process metrics.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/wtop" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/wtop/" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
 						</div>
 					</div>
-					<h3>wtop</h3>
-					<p data-i18n="project_wtop_desc">A self-contained, single-binary Windows system monitor inspired by htop — real-time CPU, memory, GPU, and process metrics.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/wtop" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://www.michaelsanford.com/wtop/" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-						</a>
-					</div>
-				</div>
+				</article>
 
 				<!-- Project 2: Trayage -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-bell"></i>
-						<div class="tech-badges">
-							<span class="tech-badge csharp">C#</span>
-							<span class="tech-badge dotnet">.NET 9</span>
+				<article class="project-row">
+					<div class="project-media">
+						<div class="window-frame is-flyout" role="img" aria-label="Trayage inbox flyout showing grouped pull-request and mention items">
+							<div class="ty-head">
+								<h4>Inbox</h4>
+								<div class="ty-tools">
+									<span title="Refresh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></span>
+									<span title="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7 19.4a1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H1a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 2.6 7"/></svg></span>
+								</div>
+							</div>
+							<div class="ty-group">octocat/hello-world</div>
+							<div class="ty-item">
+								<div class="ty-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 9v6a3 3 0 0 0 3 3h6"/></svg></div>
+								<div><div class="ty-title">Add retry/backoff to the poller</div><div class="ty-sub">Review requested · 4m ago</div></div>
+								<div class="ty-unread"></div>
+							</div>
+							<div class="ty-item">
+								<div class="ty-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+								<div><div class="ty-title">@you — can you take a look?</div><div class="ty-sub">Mention · 22m ago</div></div>
+								<div class="ty-unread"></div>
+							</div>
+							<div class="ty-group">acme/widgets</div>
+							<div class="ty-item">
+								<div class="ty-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div>
+								<div><div class="ty-title">CI passed on #482</div><div class="ty-sub">Watched repo · 1h ago</div></div>
+							</div>
+							<div class="ty-foot">3 items need your attention</div>
 						</div>
 					</div>
-					<h3>Trayage</h3>
-					<p data-i18n="project_trayage_desc">A Windows system tray app that consolidates GitHub and Bitbucket Cloud notifications into a unified inbox with native Windows toast alerts.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/Trayage" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://www.michaelsanford.com/Trayage/" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-						</a>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>Trayage</h3>
+							<div class="tech-badges">
+								<span class="tech-badge csharp">C#</span>
+								<span class="tech-badge dotnet">.NET 9</span>
+							</div>
+						</div>
+						<p data-i18n="project_trayage_desc">A Windows system tray app that consolidates GitHub and Bitbucket Cloud notifications into a unified inbox with native Windows toast alerts.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/Trayage" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/Trayage/" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
+						</div>
 					</div>
-				</div>
+				</article>
 
 				<!-- Project 3: Boomoji -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-gamepad"></i>
-						<div class="tech-badges">
-							<span class="tech-badge js">Vanilla JS</span>
-							<span class="tech-badge pwa">PWA</span>
-							<span class="tech-badge offline" data-i18n="badge_offline">Offline</span>
+				<article class="project-row">
+					<div class="project-media is-centered">
+						<img class="bare-shot is-app" src="assets/projects/boomoji.png" alt="Boomoji progressive web app home screen showing eight colourful emoji game modes" loading="lazy">
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>Boomoji</h3>
+							<div class="tech-badges">
+								<span class="tech-badge js">Vanilla JS</span>
+								<span class="tech-badge pwa">PWA</span>
+								<span class="tech-badge offline" data-i18n="badge_offline">Offline</span>
+							</div>
+						</div>
+						<p data-i18n="project_boomoji_desc">A mobile-first progressive web app emoji game for toddlers — tap, pop, and discover across eight game modes.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/Boomoji" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/Boomoji/" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
 						</div>
 					</div>
-					<h3>Boomoji</h3>
-					<p data-i18n="project_boomoji_desc">A mobile-first progressive web app emoji game for toddlers — tap, pop, and discover across eight game modes.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/Boomoji" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://www.michaelsanford.com/Boomoji/" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-						</a>
-					</div>
-				</div>
+				</article>
 
 				<!-- Project 4: IntelcomTracker -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-terminal"></i>
-						<div class="tech-badges">
-							<span class="tech-badge csharp">C# .NET</span>
+				<article class="project-row">
+					<div class="project-media">
+						<figure class="window-frame">
+							<div class="window-bar">
+								<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+								<span class="window-title">IntelcomTracker</span>
+							</div>
+							<pre class="code-mock is-term is-wide" aria-hidden="true"><code>╭────┬──────────────────┬──────────┬──────────────────┬─────────────┬─────────╮
+│ #  │ Tracking ID      │ Nickname │ Status           │ ETA Window  │ Updated │
+├────┼──────────────────┼──────────┼──────────────────┼─────────────┼─────────┤
+│ 1  │ INTLCMI000000001 │ —        │ <span class="it-dim">Data received</span>    │ —           │ 1d ago  │
+│ 2  │ INTLCMI000000002 │ Best Buy │ <span class="it-received">Received</span>         │ —           │ 4h ago  │
+│ 3  │ INTLCMI000000003 │ IKEA     │ <span class="it-station">At station</span>       │ —           │ 3m ago  │
+│ <span class="it-caret">&gt;</span>4 │ INTLCMI000000004 │ Amazon   │ <span class="it-loaded">Loaded</span>           │ 1:28–2:28 PM│ 5s ago  │
+│ 5  │ INTLCMI000000005 │ Costco   │ <span class="it-delivered">Delivered</span>        │ —           │ 2h ago  │
+│ 6  │ INTLCMI000000006 │ Wayfair  │ <span class="it-fail">Delivery failed</span>  │ —           │ 2d ago  │
+╰────┴──────────────────┴──────────┴──────────────────┴─────────────┴─────────╯
+<span class="it-key">[A]</span> Add  <span class="it-key">[D]</span> Delete  <span class="it-key">[R]</span> Refresh  <span class="it-key">[↑↓]</span> Nav  <span class="it-key">[Q]</span> Quit   <span class="it-dim">auto-refresh in 58m</span></code></pre>
+						</figure>
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>IntelcomTracker</h3>
+							<div class="tech-badges">
+								<span class="tech-badge csharp">C# .NET</span>
+							</div>
+						</div>
+						<p data-i18n="project_intelcom_desc">A custom tracking dashboard and scraper for monitoring Canadian Intelcom Express package delivery status.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/IntelcomTracker" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/IntelcomTracker/" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
 						</div>
 					</div>
-					<h3>IntelcomTracker</h3>
-					<p data-i18n="project_intelcom_desc">A custom tracking dashboard and scraper for monitoring Canadian Intelcom Express package delivery status.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/IntelcomTracker" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://www.michaelsanford.com/IntelcomTracker/" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-						</a>
-					</div>
-				</div>
+				</article>
 
 				<!-- Project 5: Switch-AwsProfile -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-terminal"></i>
-						<div class="tech-badges">
-							<span class="tech-badge powershell">PowerShell</span>
+				<article class="project-row">
+					<div class="project-media">
+						<figure class="window-frame">
+							<div class="window-bar">
+								<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+								<span class="window-title">pwsh in Switch-AwsProfile</span>
+							</div>
+							<pre class="code-mock is-term" aria-hidden="true"><code>┌──────────────────────────────────────┐
+│ AWS SSO Profiles (38/46)             │
+├──────────────────────────────────────┤
+│  Prod-Level3                         │
+│  Prod-MLEngineer                     │
+│  Prod-Monitor                        │
+│  Prod-OPS                            │
+│  Prod-PubPublisher                   │
+│  Prod-ReadOnlyDataSafe               │
+│  Prod-S3Auditor                      │
+│  Main-ADMIN                          │
+│  Main-OrgsAdmin                      │
+│  Main-PowerUser                      │
+│  Main-ReadOnly                       │
+│  Main-ServiceCatalog                 │
+│  Main-Billing                        │
+│<span class="sel">  Main-CostAnalyst                    </span>│
+└──────────────────────────────────────┘
+  ↑↓ Navigate   [Enter] Select   [S] Sort   [Esc] Cancel</code></pre>
+						</figure>
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>Switch-AwsProfile</h3>
+							<div class="tech-badges">
+								<span class="tech-badge powershell">PowerShell</span>
+							</div>
+						</div>
+						<p data-i18n="project_switch_aws_desc">An interactive PowerShell CLI tool that provides quick profile switching for AWS SSO accounts with arrow-key navigation.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/Switch-AwsProfile" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/Switch-AwsProfile/" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
 						</div>
 					</div>
-					<h3>Switch-AwsProfile</h3>
-					<p data-i18n="project_switch_aws_desc">An interactive PowerShell CLI tool that provides quick profile switching for AWS SSO accounts with arrow-key navigation.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/Switch-AwsProfile" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://www.michaelsanford.com/Switch-AwsProfile/" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-						</a>
-					</div>
-				</div>
+				</article>
 
 				<!-- Project 6: mdr -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-terminal"></i>
-						<div class="tech-badges">
-							<span class="tech-badge csharp">C# .NET</span>
+				<article class="project-row">
+					<div class="project-media">
+						<figure class="window-frame">
+							<div class="window-bar">
+								<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+								<span class="window-title">mdr README.md</span>
+							</div>
+							<pre class="code-mock" aria-hidden="true"><code><span class="c-dim">$</span> mdr README.md
+
+<span class="c-head"># Project Title</span>
+Renders Markdown with full <span class="c-bold">ANSI formatting</span> and
+syntax-highlighted <span class="c-info">code blocks</span>.
+
+<span class="c-dim">┌─ powershell ───────────────┐</span>
+<span class="c-dim">│</span> <span class="c-key">winget</span> install <span class="c-str">michaelsanford.mdr</span> <span class="c-dim">│</span>
+<span class="c-dim">└────────────────────────────┘</span>
+
+<span class="c-dim">↑↓/jk scroll · q quit · Monokai</span></code></pre>
+						</figure>
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>mdr</h3>
+							<div class="tech-badges">
+								<span class="tech-badge csharp">C# .NET</span>
+							</div>
+						</div>
+						<p data-i18n="project_mdr_desc">A terminal and web Markdown reader and renderer, delivering fast and beautiful document styling.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/mdr" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/mdr/" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
 						</div>
 					</div>
-					<h3>mdr</h3>
-					<p data-i18n="project_mdr_desc">A terminal and web Markdown reader and renderer, delivering fast and beautiful document styling.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/mdr" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://www.michaelsanford.com/mdr/" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-						</a>
-					</div>
-				</div>
+				</article>
 
 				<!-- Project 7: UnClear -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-puzzle-piece"></i>
-						<div class="tech-badges">
-							<span class="tech-badge js" data-i18n="badge_extension">Edge/Chrome Extension</span>
+				<article class="project-row">
+					<div class="project-media">
+						<img class="bare-shot" src="assets/projects/unclear.png" alt="UnClear — removes the &quot;Verify with CLEAR&quot; buttons in LinkedIn" loading="lazy">
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>UnClear</h3>
+							<div class="tech-badges">
+								<span class="tech-badge js" data-i18n="badge_extension">Edge/Chrome Extension</span>
+							</div>
+						</div>
+						<p data-i18n="project_unclear_desc">A lightweight user script and extension designed to clean up LinkedIn profiles by removing the 'Verify with CLEAR' buttons.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/UnClear" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://chromewebstore.google.com/detail/unclear/bilmbccofgemneflaknfifappajdbcco" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fab fa-chrome"></i> <span data-i18n="chrome_store">Chrome Web Store</span>
+							</a>
 						</div>
 					</div>
-					<h3>UnClear</h3>
-					<p data-i18n="project_unclear_desc">A lightweight user script and extension designed to clean up LinkedIn profiles by removing the 'Verify with CLEAR' buttons.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/UnClear" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://chromewebstore.google.com/detail/unclear/bilmbccofgemneflaknfifappajdbcco" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fab fa-chrome"></i> <span data-i18n="chrome_store">Chrome Web Store</span>
-						</a>
-					</div>
-				</div>
+				</article>
 
 				<!-- Project 8: node-virtualbox -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fab fa-node-js"></i>
-						<div class="tech-badges">
-							<span class="tech-badge maintainer" data-i18n="badge_maintainer">Maintainer</span>
-							<span class="tech-badge nodejs">Node.js</span>
+				<article class="project-row">
+					<div class="project-media is-centered">
+						<div class="logo-frame">
+							<img src="assets/projects/node-virtualbox.jpg" alt="Node-Virtualization organization logo" loading="lazy">
 						</div>
 					</div>
-					<h3>node-virtualbox</h3>
-					<p data-i18n="project_node_virtualbox_desc">A popular Node.js library wrapper around the VirtualBox VBoxManage CLI tool to manage and control virtual machines.</p>
-					<div class="project-links">
-						<a href="https://github.com/Node-Virtualization/node-virtualbox" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>node-virtualbox</h3>
+							<div class="tech-badges">
+								<span class="tech-badge maintainer" data-i18n="badge_maintainer">Maintainer</span>
+								<span class="tech-badge nodejs">Node.js</span>
+							</div>
+						</div>
+						<p data-i18n="project_node_virtualbox_desc">A popular Node.js library wrapper around the VirtualBox VBoxManage CLI tool to manage and control virtual machines.</p>
+						<div class="project-links">
+							<a href="https://github.com/Node-Virtualization/node-virtualbox" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+						</div>
 					</div>
-				</div>
+				</article>
 
 				<!-- Project 9: Speak-EPUB -->
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fab fa-python"></i>
-						<div class="tech-badges">
-							<span class="tech-badge python">Python</span>
+				<article class="project-row">
+					<div class="project-media">
+						<figure class="window-frame">
+							<div class="window-bar">
+								<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+								<span class="window-title">speak-epub</span>
+							</div>
+							<pre class="code-mock" aria-hidden="true"><code><span class="c-dim">$</span> python speak_epub.py book.epub <span class="c-key">--m4b</span>
+
+<span class="c-ok">✓</span> Extracted 12 chapters
+<span class="c-ok">✓</span> Ch 01  <span class="c-info">en-US-AvaNeural</span>  <span class="c-dim">04:31</span>
+<span class="c-ok">✓</span> Ch 02  <span class="c-info">en-US-AvaNeural</span>  <span class="c-dim">06:18</span>
+<span class="c-warn">▸</span> Ch 03  rendering <span class="c-str">██████</span>░░░░  62%
+<span class="c-dim">→ stitching book.m4b (chapter markers)</span></code></pre>
+						</figure>
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>Speak-EPUB</h3>
+							<div class="tech-badges">
+								<span class="tech-badge python">Python</span>
+							</div>
+						</div>
+						<p data-i18n="project_speak_epub_desc">A Python tool that converts EPUB eBooks into high-quality audiobooks using Microsoft Edge's neural text-to-speech engine.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/Speak-EPUB" class="btn btn-secondary" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/Speak-EPUB/" class="btn btn-primary" target="_blank" rel="noopener">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
 						</div>
 					</div>
-					<h3>Speak-EPUB</h3>
-					<p data-i18n="project_speak_epub_desc">A Python tool that converts EPUB eBooks into high-quality audiobooks using Microsoft Edge's neural text-to-speech engine.</p>
-					<div class="project-links">
-						<a href="https://github.com/michaelsanford/Speak-EPUB" class="btn btn-secondary" target="_blank" rel="noopener">
-							<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-						</a>
-						<a href="https://www.michaelsanford.com/Speak-EPUB/" class="btn btn-primary" target="_blank" rel="noopener">
-							<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-						</a>
-					</div>
-				</div>
+				</article>
 			</div>
 		</section>
 
