@@ -57,8 +57,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://use.fontawesome.com">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" as="style" id="google-fonts">
+	<link rel="preload" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" as="style" id="fontawesome-css">
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+	</noscript>
 	<link rel="stylesheet" href="css/styles.css">
 	
 	<script src="js/main.js" defer></script>
@@ -121,7 +125,7 @@
 				<div class="cert-card">
 					<div class="cert-badge-wrapper">
 						<a href="https://cp.certmetrics.com/comptia/en/public/verify/credential/0391D2PQBNE4Q65V" target="_blank" rel="noopener" aria-label="Verify CySA+ Certification" data-i18n-aria-label="aria_verify_cysa">
-							<img src="https://images.credly.com/size/340x340/images/dcd99b5b-da24-40a6-9364-62126d590c37/blob" alt="CompTIA CySA+ ce Certification" loading="lazy" data-i18n="badge_cysa" width="140" height="140">
+							<img src="assets/badges/cysa.webp" alt="CompTIA CySA+ ce Certification" loading="lazy" data-i18n="badge_cysa" width="140" height="140">
 						</a>
 					</div>
 					<h3 data-i18n="badge_cysa">CompTIA CySA+ ce Certification</h3>
@@ -132,7 +136,7 @@
 				<div class="cert-card">
 					<div class="cert-badge-wrapper">
 						<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="noopener" aria-label="Verify Azure Administrator Certification" data-i18n-aria-label="aria_verify_az104">
-							<img src="https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Microsoft Certified: Azure Administrator Associate" loading="lazy" data-i18n="badge_az104" width="140" height="140">
+							<img src="assets/badges/azure-associate.svg" alt="Microsoft Certified: Azure Administrator Associate" loading="lazy" data-i18n="badge_az104" width="140" height="140">
 						</a>
 					</div>
 					<h3 data-i18n="badge_az104">Microsoft Certified: Azure Administrator Associate</h3>
@@ -143,7 +147,7 @@
 				<div class="cert-card">
 					<div class="cert-badge-wrapper">
 						<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="noopener" aria-label="Heart & Stroke First Aid Course Standard" data-i18n-aria-label="aria_verify_firstaid">
-							<img src="https://i0.wp.com/advancedems.ca/wp-content/uploads/2019/04/hs_logo_square.png?resize=140%2C140&ssl=1" alt="Heart & Stroke: Standard First Aid - Level C (16h)" loading="lazy" data-i18n="badge_firstaid" width="140" height="140">
+							<img src="assets/badges/firstaid.webp" alt="Heart & Stroke: Standard First Aid - Level C (16h)" loading="lazy" data-i18n="badge_firstaid" width="140" height="140">
 						</a>
 					</div>
 					<h3 data-i18n="badge_firstaid">Heart & Stroke: Standard First Aid - Level C (16h)</h3>
@@ -160,7 +164,7 @@
 				<!-- Project 1: wtop -->
 				<article class="project-row">
 					<div class="project-media is-centered">
-						<img src="assets/projects/wtop.png" alt="wtop terminal system monitor showing CPU, memory, GPU and process metrics" loading="lazy" class="bare-shot is-app" width="1717" height="1387">
+						<img src="assets/projects/wtop.webp" alt="wtop terminal system monitor showing CPU, memory, GPU and process metrics" loading="lazy" class="bare-shot is-app" width="900" height="727">
 					</div>
 					<div class="project-body">
 						<div class="project-head">
@@ -238,7 +242,7 @@
 				<!-- Project 3: Boomoji -->
 				<article class="project-row">
 					<div class="project-media is-centered">
-						<img class="bare-shot is-app" src="assets/projects/boomoji.png" alt="Boomoji progressive web app home screen showing eight colourful emoji game modes" loading="lazy" width="807" height="1337">
+						<img class="bare-shot is-app" src="assets/projects/boomoji.webp" alt="Boomoji progressive web app home screen showing eight colourful emoji game modes" loading="lazy" width="450" height="746">
 					</div>
 					<div class="project-body">
 						<div class="project-head">
@@ -393,7 +397,7 @@ syntax-highlighted <span class="c-info">code blocks</span>.
 				<!-- Project 7: UnClear -->
 				<article class="project-row">
 					<div class="project-media">
-						<img class="bare-shot" src="assets/projects/unclear.png" alt="UnClear — removes the &quot;Verify with CLEAR&quot; buttons in LinkedIn" loading="lazy" width="1280" height="640">
+						<img class="bare-shot" src="assets/projects/unclear.webp" alt="UnClear — removes the &quot;Verify with CLEAR&quot; buttons in LinkedIn" loading="lazy" width="900" height="450">
 					</div>
 					<div class="project-body">
 						<div class="project-head">
@@ -418,7 +422,7 @@ syntax-highlighted <span class="c-info">code blocks</span>.
 				<article class="project-row">
 					<div class="project-media is-centered">
 						<div class="logo-frame">
-							<img src="assets/projects/node-virtualbox.jpg" alt="Node-Virtualization organization logo" loading="lazy" width="200" height="200">
+							<img src="assets/projects/node-virtualbox.webp" alt="Node-Virtualization organization logo" loading="lazy" width="200" height="200">
 						</div>
 					</div>
 					<div class="project-body">

@@ -1,3 +1,7 @@
+// Load CSS stylesheets asynchronously to avoid blocking initial render
+document.getElementById('google-fonts').rel = 'stylesheet';
+document.getElementById('fontawesome-css').rel = 'stylesheet';
+
 const translations = {
   en: {
     intro: "Hello, I'm",
