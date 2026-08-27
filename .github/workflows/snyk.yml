@@ -1,0 +1,69 @@
+name: Snyk
+
+# Security scanning: Snyk Code (SAST) only. This repository has no dependency
+# manifest that Snyk Open Source can resolve, so there is nothing to snapshot to
+# snyk.io either. Results are published to the repository's Code scanning tab.
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    # Weekly, so updated Snyk Code rules get applied to untouched source.
+    - cron: '41 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  snyk:
+    name: Snyk
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write   # required to upload SARIF to code scanning
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Snyk CLI
+        uses: snyk/actions/setup@12140f4059e244892ae643824a95459a102120dd # master, 2026-08-27
+
+      - name: Snyk Code
+        id: code
+        shell: bash
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        run: |
+          set +e
+          snyk code test --severity-threshold=high --sarif-file-output=snyk-code.sarif
+          code=$?
+          if [ "$code" -eq 3 ]; then
+            echo "No Snyk Code supported source files found; treating as clean."
+            code=0
+          fi
+          echo "exit=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Upload Code results
+        if: ${{ !cancelled() && hashFiles('snyk-code.sarif') != '' }}
+        uses: github/codeql-action/upload-sarif@fddeee1a7ece751b577e409a89057319e3172939 # v4
+        with:
+          sarif_file: snyk-code.sarif
+          category: snyk-code
+
+      - name: Gate
+        if: ${{ !cancelled() }}
+        shell: bash
+        run: |
+          fail=0
+          check() {
+            name="$1"; code="${2:-0}"
+            case "$code" in
+              0) echo "$name: clean" ;;
+              1) echo "::error::$name found issues at or above the high severity threshold"; fail=1 ;;
+              *) echo "::error::$name did not run (exit $code). A missing or invalid SNYK_TOKEN repository secret is the usual cause; see the step log."; fail=1 ;;
+            esac
+          }
+          check "Snyk Code" "${{ steps.code.outputs.exit }}"
+          exit $fail
