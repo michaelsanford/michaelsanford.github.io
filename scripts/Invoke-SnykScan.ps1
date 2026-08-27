@@ -21,24 +21,20 @@
     Also write snyk-sca.sarif / snyk-code.sarif, as CI does before uploading them
     to GitHub code scanning.
 
-.PARAMETER Monitor
-    Snapshot the project to snyk.io. CI does this only on pushes to the default
-    branch; running it from a feature branch overwrites that snapshot.
-
 .EXAMPLE
     ./scripts/Invoke-SnykScan.ps1
 
 .EXAMPLE
     ./scripts/Invoke-SnykScan.ps1 -SeverityThreshold medium -Sarif
 #>
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingWriteHost', '',
+    Justification = 'Console-facing script: the colourised status output is the point, and it is never piped into anything.')]
 [CmdletBinding()]
 param(
     [ValidateSet('low', 'medium', 'high', 'critical')]
     [string] $SeverityThreshold = 'high',
 
-    [switch] $Sarif,
-
-    [switch] $Monitor
+    [switch] $Sarif
 )
 
 Set-StrictMode -Version Latest
