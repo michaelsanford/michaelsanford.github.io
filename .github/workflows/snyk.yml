@@ -3,10 +3,11 @@ name: Snyk
 # Security scanning: Snyk Code (SAST) only. This repository has no dependency
 # manifest that Snyk Open Source can resolve, so there is nothing to snapshot to
 # snyk.io either. Results are published to the repository's Code scanning tab.
+# `--remote-repo-url` tells Snyk this is a public repository. Without it the CLI
+# cannot infer visibility in CI and bills every scan against the Free plan's
+# private-test allowance, which is what exhausted the quota. Do not remove it.
 on:
   push:
-    branches: [master]
-  pull_request:
     branches: [master]
   schedule:
     # Weekly, so updated Snyk Code rules get applied to untouched source.
@@ -15,6 +16,9 @@ on:
 
 permissions:
   contents: read
+
+env:
+  SNYK_REMOTE_REPO_URL: https://github.com/michaelsanford/michaelsanford.github.io
 
 jobs:
   snyk:
@@ -37,7 +41,9 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: |
           set +e
-          snyk code test --severity-threshold=high --sarif-file-output=snyk-code.sarif
+          snyk code test \
+            --remote-repo-url="${{ env.SNYK_REMOTE_REPO_URL }}" \
+            --severity-threshold=high --sarif-file-output=snyk-code.sarif
           code=$?
           if [ "$code" -eq 3 ]; then
             echo "No Snyk Code supported source files found; treating as clean."
