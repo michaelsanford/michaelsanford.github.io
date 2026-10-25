@@ -256,18 +256,15 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
 
 setLanguage(localStorage.getItem("lang") || "en");
 
-// Auto-unfold Featured Projects disclosure when navigating via nav link or hash
+// Ensure Featured Projects disclosure is closed by default on page load
 const projectsDisclosure = document.getElementById('projects-disclosure');
 if (projectsDisclosure) {
-  const openProjects = () => {
-    projectsDisclosure.open = true;
-  };
+  projectsDisclosure.open = false;
 
-  document.querySelectorAll('a[href^="#project"]').forEach((link) => {
-    link.addEventListener('click', openProjects);
+  // Unfold when user explicitly clicks the Projects link in the navigation
+  document.querySelectorAll('a[href="#projects"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      projectsDisclosure.open = true;
+    });
   });
-
-  if (window.location.hash && window.location.hash.startsWith('#project')) {
-    openProjects();
-  }
 }
