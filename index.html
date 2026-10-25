@@ -24,7 +24,7 @@
 		img-src 'self' https://i0.wp.com https://images.credly.com https://learn.microsoft.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com;
 		frame-src 'none';
 		child-src 'none';
-		form-action 'none'"" />
+		form-action 'none'" />
 
 	<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), autoplay=(), display-capture=(), wake-lock=()" />
 	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
@@ -99,126 +99,153 @@
 	</header>
 
 	<main>
-		<!-- Hero Section -->
-		<section id="hi" class="hero container" aria-labelledby="hero-heading">
-			<div class="welcome" data-i18n="intro">Hello, I'm</div>
-			<h1 id="hero-heading"><span class="name-highlight">Michael Sanford</span></h1>
-			<div class="job-title" data-i18n="title">Director of Operations & Privacy Officer</div>
-			<div class="tagline-pills">
-				<span class="pill" data-i18n="pill_cybersecurity">Cybersecurity</span>
-				<span class="pill" data-i18n="pill_cloud">Cloud Architecture</span>
-				<span class="pill" data-i18n="pill_soc2">SOC 2 & Compliance</span>
-				<span class="pill" data-i18n="pill_developer">Polyglot Developer</span>
-				<span class="pill" data-i18n="pill_privacy">Privacy & Governance</span>
-			</div>
-			<div class="intro-blurb" data-i18n="blurb">
-				I lead operations, security, and compliance at a cloud-native software company, bridging nearly a decade of hands-on software engineering with the governance, privacy, and risk management that modern organizations need to get right. I build security programs (SOC 2 Type II), architect enterprise cloud infrastructure (AWS/Azure), and design tools that developers love to use.
-			</div>
-		</section>
-
-		<!-- Professional Credentials Section -->
-		<section id="certs" class="section container" aria-labelledby="credentials-heading">
-			<h2 id="credentials-heading" class="section-title" data-i18n="certsTitle">Professional Credentials</h2>
-			
-			<div class="certs-grid">
-				<!-- CompTIA CySA+ -->
-				<div class="cert-card">
-					<div class="cert-badge-wrapper">
-						<a href="https://cp.certmetrics.com/comptia/en/public/verify/credential/0391D2PQBNE4Q65V" target="_blank" rel="noopener" aria-label="Verify CySA+ Certification" data-i18n-aria-label="aria_verify_cysa">
-							<img src="assets/badges/cysa.webp" alt="CompTIA CySA+ ce Certification" loading="lazy" data-i18n="badge_cysa" width="140" height="140">
-						</a>
+		<div class="dashboard-grid container">
+			<div class="dashboard-main">
+				<!-- Hero Section -->
+				<section id="hi" class="hero" aria-labelledby="hero-heading">
+					<div class="welcome" data-i18n="intro">Hello, I'm</div>
+					<h1 id="hero-heading"><span class="name-highlight">Michael Sanford</span></h1>
+					<div class="job-title" data-i18n="title">Director of Operations & Privacy Officer</div>
+					<div class="tagline-pills">
+						<span class="pill" data-i18n="pill_cybersecurity">Cybersecurity</span>
+						<span class="pill" data-i18n="pill_cloud">Cloud Architecture</span>
+						<span class="pill" data-i18n="pill_soc2">SOC 2 & Compliance</span>
+						<span class="pill" data-i18n="pill_developer">Polyglot Developer</span>
+						<span class="pill" data-i18n="pill_privacy">Privacy & Governance</span>
 					</div>
-					<h3 data-i18n="badge_cysa">CompTIA CySA+ ce Certification</h3>
-					<p>CompTIA</p>
-				</div>
-
-				<!-- Azure Administrator -->
-				<div class="cert-card">
-					<div class="cert-badge-wrapper">
-						<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="noopener" aria-label="Verify Azure Administrator Certification" data-i18n-aria-label="aria_verify_az104">
-							<img src="assets/badges/azure-associate.svg" alt="Microsoft Certified: Azure Administrator Associate" loading="lazy" data-i18n="badge_az104" width="140" height="140">
-						</a>
+					<div class="intro-blurb" data-i18n="blurb">
+						I lead operations, security, and compliance at a cloud-native software company, bridging nearly a decade of hands-on software engineering with the governance, privacy, and risk management that modern organizations need to get right. I build security programs (SOC 2 Type II), architect enterprise cloud infrastructure (AWS/Azure), and design tools that developers love to use.
 					</div>
-					<h3 data-i18n="badge_az104">Microsoft Certified: Azure Administrator Associate</h3>
-					<p>Microsoft</p>
-				</div>
+				</section>
 
-				<!-- First Aid -->
-				<div class="cert-card">
-					<div class="cert-badge-wrapper">
-						<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="noopener" aria-label="Heart & Stroke First Aid Course Standard" data-i18n-aria-label="aria_verify_firstaid">
-							<img src="assets/badges/firstaid.webp" alt="Heart & Stroke: Standard First Aid - Level C (16h)" loading="lazy" data-i18n="badge_firstaid" width="140" height="140">
-						</a>
+				<!-- Connect Section -->
+				<section id="social" class="section-connect" aria-labelledby="connect-heading">
+					<h2 id="connect-heading" class="section-title" data-i18n="connectTitle">Connect & Network</h2>
+
+					<div class="connect-container">
+						<div class="social-dock">
+							<a target="_blank" rel="me noopener" href="https://www.linkedin.com/in/michaelsanford0" class="social-item">
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+							<a target="_blank" rel="me noopener" href="https://github.com/michaelsanford" class="social-item">
+								<i class="fab fa-github"></i> GitHub
+							</a>
+							<a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile" class="social-item">
+								<i class="fab fa-stack-overflow"></i> StackOverflow
+							</a>
+							<a target="_blank" rel="me noopener" href="https://orcid.org/0000-0002-1209-0301" class="social-item">
+								<i class="fab fa-orcid"></i> ORCID
+							</a>
+							<a target="_blank" rel="me noopener" href="https://lichess.org/@/msanford" class="social-item">
+								<i class="fas fa-chess"></i> <span data-i18n="chess">Chess</span>
+							</a>
+							<a target="_blank" rel="me noopener" href="https://ko-fi.com/eigenvector" class="social-item">
+								<i class="fas fa-mug-hot"></i> Ko-Fi
+							</a>
+						</div>
+
+						<div class="network-badges">
+							<a href="https://stackexchange.com/users/39774/msanford" target="_blank" rel="noopener">
+								<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="Profile for msanford on Stack Exchange" title="Profile for msanford on Stack Exchange" loading="lazy" data-i18n="se_profile" data-i18n-title="se_profile" />
+							</a>
+							<a href="https://tryhackme.com/p/unit.vector" target="_blank" rel="noopener">
+								<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" width="217" height="58" alt="TryHackMe Profile" loading="lazy" data-i18n="thm_profile">
+							</a>
+						</div>
 					</div>
-					<h3 data-i18n="badge_firstaid">Heart & Stroke: Standard First Aid - Level C (16h)</h3>
-					<p data-i18n="issuer_heart_stroke">Heart & Stroke Foundation</p>
-				</div>
+				</section>
 			</div>
-		</section>
 
-		<!-- Connect Section -->
-		<section id="social" class="section container" aria-labelledby="connect-heading">
-			<h2 id="connect-heading" class="section-title" data-i18n="connectTitle">Connect & Network</h2>
+			<!-- Professional Credentials Sidebar -->
+			<aside id="certs" class="dashboard-sidebar" aria-labelledby="credentials-heading">
+				<h2 id="credentials-heading" class="section-title" data-i18n="certsTitle">Professional Credentials</h2>
+				
+				<div class="certs-list">
+					<!-- CompTIA CySA+ -->
+					<div class="cert-card is-compact">
+						<div class="cert-badge-wrapper">
+							<a href="https://cp.certmetrics.com/comptia/en/public/verify/credential/0391D2PQBNE4Q65V" target="_blank" rel="noopener" aria-label="Verify CySA+ Certification" data-i18n-aria-label="aria_verify_cysa">
+								<img src="assets/badges/cysa.webp" alt="CompTIA CySA+ ce Certification" loading="lazy" data-i18n="badge_cysa" width="60" height="60">
+							</a>
+						</div>
+						<div class="cert-info">
+							<h3 data-i18n="badge_cysa">CompTIA CySA+ ce Certification</h3>
+							<p>CompTIA</p>
+						</div>
+					</div>
 
-			<div class="connect-container">
-				<div class="social-dock">
-					<a target="_blank" rel="me noopener" href="https://www.linkedin.com/in/michaelsanford0" class="social-item">
-						<i class="fab fa-linkedin"></i> LinkedIn
-					</a>
-					<a target="_blank" rel="me noopener" href="https://github.com/michaelsanford" class="social-item">
-						<i class="fab fa-github"></i> GitHub
-					</a>
-					<a target="_blank" rel="me noopener" href="https://stackoverflow.com/users/114900/msanford?tab=profile" class="social-item">
-						<i class="fab fa-stack-overflow"></i> StackOverflow
-					</a>
-					<a target="_blank" rel="me noopener" href="https://orcid.org/0000-0002-1209-0301" class="social-item">
-						<i class="fab fa-orcid"></i> ORCID
-					</a>
-					<a target="_blank" rel="me noopener" href="https://lichess.org/@/msanford" class="social-item">
-						<i class="fas fa-chess"></i> <span data-i18n="chess">Chess</span>
-					</a>
-					<a target="_blank" rel="me noopener" href="https://ko-fi.com/eigenvector" class="social-item">
-						<i class="fas fa-mug-hot"></i> Ko-Fi
-					</a>
+					<!-- Azure Administrator -->
+					<div class="cert-card is-compact">
+						<div class="cert-badge-wrapper">
+							<a href="https://learn.microsoft.com/api/credentials/share/en-ca/msanford/2C285A95FB03C29E?sharingId=9BE7EF31173E5AE4" target="_blank" rel="noopener" aria-label="Verify Azure Administrator Certification" data-i18n-aria-label="aria_verify_az104">
+								<img src="assets/badges/azure-associate.svg" alt="Microsoft Certified: Azure Administrator Associate" loading="lazy" data-i18n="badge_az104" width="60" height="60">
+							</a>
+						</div>
+						<div class="cert-info">
+							<h3 data-i18n="badge_az104">Microsoft Certified: Azure Administrator Associate</h3>
+							<p>Microsoft</p>
+						</div>
+					</div>
 
-					<!-- Preserved Commented Out Social Options for future customization -->
-					<!--
-					<a rel="me noopener" target="_blank" href="https://infosec.exchange/@unitvector" class="social-item">
-						<i class="fab fa-mastodon"></i> Mastodon
-					</a>
-					<a target="_blank" rel="me noopener" href="https://dev.to/msanford" class="social-item">
-						<i class="fab fa-dev"></i> Dev.to
-					</a>
-					<a target="_blank" rel="me noopener" href="https://hub.docker.com/u/msanford" class="social-item">
-						<i class="fab fa-docker"></i> Docker Hub
-					</a>
-					<a target="_blank" rel="me noopener" href="https://www.kaggle.com/michaelsanford" class="social-item">
-						<i class="fab fa-kaggle"></i> Kaggle
-					</a>
-					<a target="_blank" rel="me noopener" href="https://threema.id/JWZ985BH" class="social-item">
-						<i class="fas fa-comment-dots"></i> Threema
-					</a>
-					-->
+					<!-- First Aid -->
+					<div class="cert-card is-compact">
+						<div class="cert-badge-wrapper">
+							<a href="https://cpr.heartandstroke.ca/s/article/Course-Standard-First-Aid-Level-C" target="_blank" rel="noopener" aria-label="Heart & Stroke First Aid Course Standard" data-i18n-aria-label="aria_verify_firstaid">
+								<img src="assets/badges/firstaid.webp" alt="Heart & Stroke: Standard First Aid - Level C (16h)" loading="lazy" data-i18n="badge_firstaid" width="60" height="60">
+							</a>
+						</div>
+						<div class="cert-info">
+							<h3 data-i18n="badge_firstaid">Heart & Stroke: Standard First Aid - Level C (16h)</h3>
+							<p data-i18n="issuer_heart_stroke">Heart & Stroke Foundation</p>
+						</div>
+					</div>
 				</div>
-
-				<div class="network-badges">
-					<a href="https://stackexchange.com/users/39774/msanford" target="_blank" rel="noopener">
-						<img src="https://stackexchange.com/users/flair/39774.png" width="208" height="58" alt="Profile for msanford on Stack Exchange" title="Profile for msanford on Stack Exchange" loading="lazy" data-i18n="se_profile" data-i18n-title="se_profile" />
-					</a>
-					<a href="https://tryhackme.com/p/unit.vector" target="_blank" rel="noopener">
-						<img src="https://tryhackme-badges.s3.amazonaws.com/unit.vector.png" width="217" height="58" alt="TryHackMe Profile" loading="lazy" data-i18n="thm_profile">
-					</a>
-				</div>
-			</div>
-		</section>
+			</aside>
+		</div>
 
 		<!-- Featured Projects Section -->
 		<section id="projects" class="section container" aria-labelledby="projects-heading">
-			<h2 id="projects-heading" class="section-title" data-i18n="projectsTitle">Featured Projects</h2>
-			
-			<div class="projects-list">
-				<!-- Project 1: Trayage -->
-				<article class="project-row">
+			<details class="projects-disclosure" id="projects-disclosure">
+				<summary class="projects-summary">
+					<div class="projects-summary-content">
+						<h2 id="projects-heading" class="section-title" data-i18n="projectsTitle">Featured Projects</h2>
+						<span class="projects-toggle-badge">
+							<span class="toggle-text" data-i18n="toggle_projects">Explore Projects</span>
+							<svg class="disclosure-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg>
+						</span>
+					</div>
+				</summary>
+
+				<div class="projects-list">
+				<!-- Project 1: wtop -->
+				<article class="project-row" id="project-wtop">
+					<div class="project-media is-centered">
+						<img src="assets/projects/wtop.webp" alt="wtop terminal system monitor showing CPU, memory, GPU and process metrics" loading="lazy" class="bare-shot is-app" width="900" height="727">
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>wtop</h3>
+							<div class="tech-badges">
+								<span class="tech-badge go">Go</span>
+								<span class="tech-badge terminal">Terminal</span>
+							</div>
+						</div>
+						<p data-i18n="project_wtop_desc">A self-contained, single-binary terminal system monitor for Windows, inspired by htop — real-time CPU, memory, GPU, and process metrics.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/wtop" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for wtop" data-i18n-aria-label="aria_repo_wtop">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://www.michaelsanford.com/wtop/" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Launch wtop project website" data-i18n-aria-label="aria_launch_wtop">
+								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
+							</a>
+						</div>
+					</div>
+				</article>
+
+				<!-- Project 2: Trayage -->
+				<article class="project-row" id="project-trayage">
 					<div class="project-media">
 						<div class="window-frame is-flyout" role="img" aria-label="Trayage inbox flyout showing grouped pull-request and mention items">
 							<div class="ty-head">
@@ -270,33 +297,8 @@
 					</div>
 				</article>
 
-				<!-- Project 2: wtop -->
-				<article class="project-row">
-					<div class="project-media is-centered">
-						<img src="assets/projects/wtop.webp" alt="wtop terminal system monitor showing CPU, memory, GPU and process metrics" loading="lazy" class="bare-shot is-app" width="900" height="727">
-					</div>
-					<div class="project-body">
-						<div class="project-head">
-							<h3>wtop</h3>
-							<div class="tech-badges">
-								<span class="tech-badge go">Go</span>
-								<span class="tech-badge terminal">Terminal</span>
-							</div>
-						</div>
-						<p data-i18n="project_wtop_desc">A self-contained, single-binary terminal system monitor for Windows, inspired by htop — real-time CPU, memory, GPU, and process metrics.</p>
-						<div class="project-links">
-							<a href="https://github.com/michaelsanford/wtop" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for wtop" data-i18n-aria-label="aria_repo_wtop">
-								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-							</a>
-							<a href="https://www.michaelsanford.com/wtop/" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Launch wtop project website" data-i18n-aria-label="aria_launch_wtop">
-								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-							</a>
-						</div>
-					</div>
-				</article>
-
 				<!-- Project 3: Switch-AwsProfile -->
-				<article class="project-row">
+				<article class="project-row" id="project-switch-aws">
 					<div class="project-media">
 						<figure class="window-frame">
 							<div class="window-bar">
@@ -343,27 +345,26 @@
 					</div>
 				</article>
 
-				<!-- Project 4: SkyNoise -->
-				<article class="project-row">
+				<!-- Project 4: Boomoji -->
+				<article class="project-row" id="project-boomoji">
 					<div class="project-media is-centered">
-						<img src="assets/projects/skynoise.webp" alt="SkyNoise radar flight tracker showing real-time aircraft overhead with noise impact analysis" loading="lazy" class="bare-shot is-app" width="480" height="973">
+						<img class="bare-shot is-app" src="assets/projects/boomoji.webp" alt="Boomoji progressive web app home screen showing eight colourful emoji game modes" loading="lazy" width="450" height="746">
 					</div>
 					<div class="project-body">
 						<div class="project-head">
-							<h3>SkyNoise</h3>
+							<h3>Boomoji</h3>
 							<div class="tech-badges">
-								<span class="tech-badge react">React</span>
-								<span class="tech-badge typescript">TypeScript</span>
+								<span class="tech-badge js">Vanilla JS</span>
 								<span class="tech-badge pwa">PWA</span>
 								<span class="tech-badge offline" data-i18n="badge_offline">Offline</span>
 							</div>
 						</div>
-						<p data-i18n="project_skynoise_desc">A privacy-first, serverless Progressive Web App for real-time overhead flight tracking, radar sweep visualization, trajectory analysis, and acoustic noise impact estimation.</p>
+						<p data-i18n="project_boomoji_desc">A mobile-first progressive web app emoji game for toddlers — tap, pop, and discover across eight game modes.</p>
 						<div class="project-links">
-							<a href="https://github.com/michaelsanford/SkyNoise" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for SkyNoise" data-i18n-aria-label="aria_repo_skynoise">
+							<a href="https://github.com/michaelsanford/Boomoji" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for Boomoji" data-i18n-aria-label="aria_repo_boomoji">
 								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
 							</a>
-							<a href="https://www.michaelsanford.com/SkyNoise/" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Launch SkyNoise project website" data-i18n-aria-label="aria_launch_skynoise">
+							<a href="https://www.michaelsanford.com/Boomoji/" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Launch Boomoji project website" data-i18n-aria-label="aria_launch_boomoji">
 								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
 							</a>
 						</div>
@@ -371,7 +372,7 @@
 				</article>
 
 				<!-- Project 5: Mortimer -->
-				<article class="project-row">
+				<article class="project-row" id="project-mortimer">
 					<div class="project-media is-centered">
 						<img src="assets/projects/mortimer.webp" alt="Mortimer mortgage paydown simulator and calculator dashboard showing amortization and statistics" loading="lazy" class="bare-shot is-app" width="1215" height="1248">
 					</div>
@@ -397,34 +398,8 @@
 					</div>
 				</article>
 
-				<!-- Project 6: Boomoji -->
-				<article class="project-row">
-					<div class="project-media is-centered">
-						<img class="bare-shot is-app" src="assets/projects/boomoji.webp" alt="Boomoji progressive web app home screen showing eight colourful emoji game modes" loading="lazy" width="450" height="746">
-					</div>
-					<div class="project-body">
-						<div class="project-head">
-							<h3>Boomoji</h3>
-							<div class="tech-badges">
-								<span class="tech-badge js">Vanilla JS</span>
-								<span class="tech-badge pwa">PWA</span>
-								<span class="tech-badge offline" data-i18n="badge_offline">Offline</span>
-							</div>
-						</div>
-						<p data-i18n="project_boomoji_desc">A mobile-first progressive web app emoji game for toddlers — tap, pop, and discover across eight game modes.</p>
-						<div class="project-links">
-							<a href="https://github.com/michaelsanford/Boomoji" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for Boomoji" data-i18n-aria-label="aria_repo_boomoji">
-								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-							</a>
-							<a href="https://www.michaelsanford.com/Boomoji/" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Launch Boomoji project website" data-i18n-aria-label="aria_launch_boomoji">
-								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-							</a>
-						</div>
-					</div>
-				</article>
-
-				<!-- Project 7: Bosskey -->
-				<article class="project-row">
+				<!-- Project 6: Bosskey -->
+				<article class="project-row" id="project-bosskey">
 					<div class="project-media is-centered">
 						<img src="assets/projects/bosskey.webp" alt="Bosskey terminal user interface simulated workload dashboard with NIDS threat analysis and sparklines" loading="lazy" class="bare-shot is-app" width="707" height="568">
 					</div>
@@ -449,8 +424,56 @@
 					</div>
 				</article>
 
-				<!-- Project 8: mdr -->
-				<article class="project-row">
+				<!-- Project 7: UnClear -->
+				<article class="project-row" id="project-unclear">
+					<div class="project-media">
+						<img class="bare-shot" src="assets/projects/unclear.webp" alt="UnClear — removes the &quot;Verify with CLEAR&quot; buttons in LinkedIn" loading="lazy" width="900" height="450">
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>UnClear</h3>
+							<div class="tech-badges">
+								<span class="tech-badge js" data-i18n="badge_extension">Edge/Chrome Extension</span>
+							</div>
+						</div>
+						<p data-i18n="project_unclear_desc">A lightweight user script and extension designed to clean up LinkedIn profiles by removing the 'Verify with CLEAR' buttons.</p>
+						<div class="project-links">
+							<a href="https://github.com/michaelsanford/UnClear" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for UnClear" data-i18n-aria-label="aria_repo_unclear">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+							<a href="https://chromewebstore.google.com/detail/unclear/bilmbccofgemneflaknfifappajdbcco" class="btn btn-primary" target="_blank" rel="noopener" aria-label="UnClear Chrome Web Store listing" data-i18n-aria-label="aria_launch_unclear">
+								<i class="fab fa-chrome"></i> <span data-i18n="chrome_store">Chrome Web Store</span>
+							</a>
+						</div>
+					</div>
+				</article>
+
+				<!-- Project 8: node-virtualbox -->
+				<article class="project-row" id="project-node-virtualbox">
+					<div class="project-media is-centered">
+						<div class="logo-frame">
+							<img src="assets/projects/node-virtualbox.webp" alt="Node-Virtualization organization logo" loading="lazy" width="200" height="200">
+						</div>
+					</div>
+					<div class="project-body">
+						<div class="project-head">
+							<h3>node-virtualbox</h3>
+							<div class="tech-badges">
+								<span class="tech-badge maintainer" data-i18n="badge_maintainer">Maintainer</span>
+								<span class="tech-badge nodejs">Node.js</span>
+							</div>
+						</div>
+						<p data-i18n="project_node_virtualbox_desc">A popular Node.js library wrapper around the VirtualBox VBoxManage CLI tool to manage and control virtual machines.</p>
+						<div class="project-links">
+							<a href="https://github.com/Node-Virtualization/node-virtualbox" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for node-virtualbox" data-i18n-aria-label="aria_repo_node_virtualbox">
+								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
+							</a>
+						</div>
+					</div>
+				</article>
+
+				<!-- Project 9: mdr -->
+				<article class="project-row" id="project-mdr">
 					<div class="project-media">
 						<figure class="window-frame">
 							<div class="window-bar">
@@ -488,96 +511,8 @@ syntax-highlighted <span class="c-info">code blocks</span>.
 						</div>
 					</div>
 				</article>
-
-				<!-- Project 9: UnClear -->
-				<article class="project-row">
-					<div class="project-media">
-						<img class="bare-shot" src="assets/projects/unclear.webp" alt="UnClear — removes the &quot;Verify with CLEAR&quot; buttons in LinkedIn" loading="lazy" width="900" height="450">
-					</div>
-					<div class="project-body">
-						<div class="project-head">
-							<h3>UnClear</h3>
-							<div class="tech-badges">
-								<span class="tech-badge js" data-i18n="badge_extension">Edge/Chrome Extension</span>
-							</div>
-						</div>
-						<p data-i18n="project_unclear_desc">A lightweight user script and extension designed to clean up LinkedIn profiles by removing the 'Verify with CLEAR' buttons.</p>
-						<div class="project-links">
-							<a href="https://github.com/michaelsanford/UnClear" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for UnClear" data-i18n-aria-label="aria_repo_unclear">
-								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-							</a>
-							<a href="https://chromewebstore.google.com/detail/unclear/bilmbccofgemneflaknfifappajdbcco" class="btn btn-primary" target="_blank" rel="noopener" aria-label="UnClear Chrome Web Store listing" data-i18n-aria-label="aria_launch_unclear">
-								<i class="fab fa-chrome"></i> <span data-i18n="chrome_store">Chrome Web Store</span>
-							</a>
-						</div>
-					</div>
-				</article>
-
-				<!-- Project 10: node-virtualbox -->
-				<article class="project-row">
-					<div class="project-media is-centered">
-						<div class="logo-frame">
-							<img src="assets/projects/node-virtualbox.webp" alt="Node-Virtualization organization logo" loading="lazy" width="200" height="200">
-						</div>
-					</div>
-					<div class="project-body">
-						<div class="project-head">
-							<h3>node-virtualbox</h3>
-							<div class="tech-badges">
-								<span class="tech-badge maintainer" data-i18n="badge_maintainer">Maintainer</span>
-								<span class="tech-badge nodejs">Node.js</span>
-							</div>
-						</div>
-						<p data-i18n="project_node_virtualbox_desc">A popular Node.js library wrapper around the VirtualBox VBoxManage CLI tool to manage and control virtual machines.</p>
-						<div class="project-links">
-							<a href="https://github.com/Node-Virtualization/node-virtualbox" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for node-virtualbox" data-i18n-aria-label="aria_repo_node_virtualbox">
-								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-							</a>
-						</div>
-					</div>
-				</article>
-
-				<!-- Project 11: IntelcomTracker -->
-				<article class="project-row">
-					<div class="project-media">
-						<figure class="window-frame">
-							<div class="window-bar">
-								<span class="dot"></span><span class="dot"></span><span class="dot"></span>
-								<span class="window-title">IntelcomTracker</span>
-							</div>
-							<pre class="code-mock is-term is-wide" aria-hidden="true"><code>╭────┬──────────────────┬──────────┬──────────────────┬─────────────┬─────────╮
-│ #  │ Tracking ID      │ Nickname │ Status           │ ETA Window  │ Updated │
-├────┼──────────────────┼──────────┼──────────────────┼─────────────┼─────────┤
-│ 1  │ INTLCMI000000001 │ —        │ <span class="it-dim">Data received</span>    │ —           │ 1d ago  │
-│ 2  │ INTLCMI000000002 │ Best Buy │ <span class="it-received">Received</span>         │ —           │ 4h ago  │
-│ 3  │ INTLCMI000000003 │ IKEA     │ <span class="it-station">At station</span>       │ —           │ 3m ago  │
-│ <span class="it-caret">&gt;</span>4 │ INTLCMI000000004 │ Amazon   │ <span class="it-loaded">Loaded</span>           │ 1:28–2:28 PM│ 5s ago  │
-│ 5  │ INTLCMI000000005 │ Costco   │ <span class="it-delivered">Delivered</span>        │ —           │ 2h ago  │
-│ 6  │ INTLCMI000000006 │ Wayfair  │ <span class="it-fail">Delivery failed</span>  │ —           │ 2d ago  │
-│ 7  │ INTLCMI000000007 │ Wayfair  │ <span class="it-fail">Delivery failed</span>  │ —           │ 2d ago  │
-╰────┴──────────────────┴──────────┴──────────────────┴─────────────┴─────────╯
-<span class="it-key">[A]</span> Add  <span class="it-key">[D]</span> Delete  <span class="it-key">[R]</span> Refresh  <span class="it-key">[↑↓]</span> Nav  <span class="it-key">[Q]</span> Quit   <span class="it-dim">auto-refresh in 58m</span></code></pre>
-						</figure>
-					</div>
-					<div class="project-body">
-						<div class="project-head">
-							<h3>IntelcomTracker</h3>
-							<div class="tech-badges">
-								<span class="tech-badge csharp">C# .NET</span>
-							</div>
-						</div>
-						<p data-i18n="project_intelcom_desc">A custom tracking dashboard and scraper for monitoring Canadian Intelcom Express package delivery status.</p>
-						<div class="project-links">
-							<a href="https://github.com/michaelsanford/IntelcomTracker" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub Repository for IntelcomTracker" data-i18n-aria-label="aria_repo_intelcom">
-								<i class="fab fa-github"></i> <span data-i18n="view_repo">GitHub Repository</span>
-							</a>
-							<a href="https://www.michaelsanford.com/IntelcomTracker/" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Launch IntelcomTracker project website" data-i18n-aria-label="aria_launch_intelcom">
-								<i class="fas fa-external-link-alt"></i> <span data-i18n="launch_app">Launch Project</span>
-							</a>
-						</div>
-					</div>
-				</article>
-			</div>
+				</div>
+			</details>
 		</section>
 	</main>
 
